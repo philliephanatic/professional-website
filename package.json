@@ -1,0 +1,30 @@
+{
+  "name": "nolan-young-professional-site",
+  "version": "1.0.0",
+  "description": "Server-rendered professional website for Nolan Young using Node.js, Express 5, and EJS.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "ejs",
+    "portfolio",
+    "web-marketing",
+    "cro",
+    "seo"
+  ],
+  "author": "Nolan Young",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "ejs": "^3.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

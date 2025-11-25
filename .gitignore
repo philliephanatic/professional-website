@@ -1,0 +1,57 @@
+# ---------------------------------------
+# Node.js
+# ---------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS-level files
+.DS_Store
+Thumbs.db
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts (future-proofing)
+dist/
+build/
+
+# EJS cache (rare, but included for safety)
+*.ejs.cache
+
+# Optional — for Parcel, Webpack, or other bundlers if you ever add them
+.cache/
+.parcel-cache/
+
+# Optional — if you add PM2 or similar later
+.pids
+
+# Optional — if you use uploads or temporary storage
+/uploads/
+tmp/
+temp/
+
+# ---------------------------------------
+# End
+# ---------------------------------------
