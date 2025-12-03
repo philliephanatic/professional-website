@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <% include ../partials/head %>
+        <%- include("../partials/head") %>
     </head>
 
     <body>
-        <% include ../partials/header %>
-            <main class="homepage">
+        <%- include("../partials/header") %>
+            <main class="default-landing-page">
                 <!-- HERO -->
                 <article class="hero-homepage">
                     <header class="hero__title">
@@ -15,15 +15,8 @@
                     </header>
                 </article>
                 <section class="sticky-nav-scope u-span-2">
-
-                <!-- STICKY NAV -->
-                <nav>
-                    <ul>
-                        <li><a> </a></li>
-                    </ul>
-                </nav>
-                </section>
-
+                
+                    
                 <!-- MODULE 1 -->
                  <article>
                     <header>
@@ -43,16 +36,16 @@
                  </article>
 
                 <!-- MODULE 3 -->
-                 <article>
-                    <header>
-                        <h2>
-                            MOD 2 H2 HEADER
-                        </h2>
-                    </header>
-                 </article>
-
-            </main>
-        <% include ../partials/footer %>
+                    <article>
+                        <header>
+                            <h2>
+                                MOD 2 H2 HEADER
+                            </h2>
+                        </header>
+                    </article>
+            </section>
+        </main>
+        <%- include("../partials/footer") %>
 
     </body>
 

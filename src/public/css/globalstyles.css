@@ -1,0 +1,227 @@
+/*__VARIABLES-BASE__*/
+:root {
+  /*_colors_*/
+  --bg-case-study: #1f2a44;
+  --bg-index: yellow;
+  --bg-module: #2f3e6a;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-color: #f5f5f5;
+
+  /*_branding-colors_*/
+  --brand-a: #36a2eb;
+  --brand-b: #ff6384;
+  --accent: gold;
+
+  /*_spacing_*/
+  --container-gap: 1.5rem;
+  --page-margin: 1rem;
+  --page-padding: 1rem;
+  --card-padding: 1.5rem;
+
+  /*_font-size_*/
+  --fs-h1: 2.8rem;
+  --fs-h2: 2rem;
+  --fs-body: 1.6rem;
+  --fs-cta: 2.5rem;
+
+  /* Line heights */
+  --lh-tight: 1.15;
+  --lh-body: 1.55;
+}
+
+/* ===== MOBILE: 375px - 767px ===== */
+@media (min-width: 375px) and (max-width: 767px) {
+  :root {
+    /*_spacing_*/
+    --page-margin: 0.5rem;
+    --page-padding: 1rem;
+    --card-padding: .75rem;
+
+    /*_font-size_*/
+    --fs-h1: 4.2rem;
+    --fs-h2: 2.8rem;
+    --fs-h3: 1.8rem;
+    --fs-body: 1.4rem;
+    --fs-cta: 2rem;
+    --fs-card-title: 1rem
+  }
+}
+
+/* ===== TABLET: 768px - 1023px ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    /*_spacing_*/
+    --page-padding: 1rem 2rem;
+    --card-padding: 1rem;
+
+    /*_font-size_*/
+    --fs-h1: 4.2rem;
+    --fs-h2: 3rem;
+    --fs-h3: 2rem;
+    --fs-body: 1.5rem;
+    --fs-cta: 2rem;
+    --fs-card-title: 1.1rem
+  }
+}
+
+/* ===== LAPTOP: 1024px - 1439px ===== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  :root {
+    /*_spacing_*/
+    --page-padding: 1rem 4rem;
+    --card-padding: 1rem;
+
+    /*_font-size_*/
+    --fs-h1: 5rem;
+    --fs-h2: 3.8rem;
+    --fs-h3: 2.8rem;
+    --fs-body: 1.6rem;
+    --fs-cta: 2rem;
+    --fs-card-title: 1.5rem;
+
+  }
+}
+
+/* ===== MONITOR: 1440px - 1999px ===== */
+@media (min-width: 1440px) and (max-width: 1999px) {
+  :root {
+    /*_spacing_*/
+    --page-padding: 2rem 6rem;
+    --card-padding: 1rem;
+
+    /*_font-size_*/
+    --fs-h1: 6.2rem;
+    --fs-h2: 5rem;
+    --fs-h3: 4rem;
+    --fs-body: 2.2rem;
+    --fs-cta: 3rem;
+    --fs-card-title: 1.75rem;
+  }
+}
+
+/* ===== XL MONITOR: 2000px + ===== */
+@media (min-width: 2000px) {
+  :root {
+    /*_spacing_*/
+    --page-padding: 4rem 50rem;
+    --card-padding: 1rem;
+
+    /*_font-size_*/
+    --fs-h1: 6.2rem;
+    --fs-h2: 5rem;
+    --fs-h3: 4rem;
+    --fs-body: 1.8rem;
+    --fs-cta: 2rem;
+    --fs-card-title: 1.75rem;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 62.5% trick: 1rem = 10px for easier scaling */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-case-study);
+  color: var(--text-color);
+  max-height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  font-size: var(--fs-body);
+}
+
+/*__FONTS__*/
+/* — Fjalla One — */
+@font-face {
+  font-family: "Fjalla One";
+  src: url("/fonts/fjalla-one/FjallaOne-Regular.woff2") format("woff2"),
+       url("/fonts/fjalla-one/FjallaOne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* — Open Sans — */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/OpenSans-Regular.woff2") format("woff2"),
+       url("/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2"),
+       url("/fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* — Roboto — */
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+       url("/fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*__TYPOGRAPHY__*/
+h1,
+h2 {
+  font-family: "Fjalla One";
+  color: var(--text-color);
+  line-height: var(--lh-tight);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  font-family: "Roboto";
+  font-size: var(--fs-body);
+  color: var(--text-color);
+  line-height: var(--lh-body);
+}
+
+/*__SPACING__*/
+h1+h2 {
+  margin-top: .25rem;
+}
+
+h1+p,
+h2+p,
+h3+p {
+  margin-top: .5rem;
+}
+
+p+p {
+  margin-top: .75rem;
+}
