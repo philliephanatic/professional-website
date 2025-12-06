@@ -1,67 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include("../partials/head") %>
-    </head>
 
-    <body>
-        <%- include("../partials/header") %>
-            <main class="default-landing-page">
-                <!-- HERO -->
-                <article class="hero-homepage">
-                    <header class="hero__title">
-                        <h1>H1 TITLE</h1>
-                        <h2>H2 TITLE</h2>
-                    </header>
-                </article>
+<head>
+    <%- include("../partials/head") %>
+</head>
 
-                <section class="sticky-nav-scope u-span-2">
+<body>
+    <%- include("../partials/header") %>
+        <main class="default-landing-page">
+            <!-- HERO -->
+            <article class="hero-homepage">
+                <header class="hero__title">
+                    <h1>H1 TITLE</h1>
+                    <h2>H2 TITLE</h2>
+                </header>
+            </article>
+
+            <section class="sticky-nav-scope u-span-2">
                 <!-- STICKY NAV -->
-                    <nav class="module grid--1 u-span-2 sticky-nav" id="stickyNav">
-                            <ul class="sticky-nav__list">
-                                <li><a class="sticky-nav__link" href="#overview">Overview</a></li>
-                                <li class="sticky-nav__sep ">&bull;</li>
-                                <li><a class="sticky-nav__link" href="#traffic-sources">Traffic Sources</a></li>
-                                <li class="sticky-nav__sep ">&bull;</li>
-                                <li><a class="sticky-nav__link" href="#audience-segments">Audience Segments</a></li>
-                                <li class="sticky-nav__sep ">&bull;</li>
-                                <li><a class="sticky-nav__link" href="#user-behavior">User Behavior</a></li>
-                                <li class="sticky-nav__sep ">&bull;</li>
-                                <li><a class="sticky-nav__link" href="#conclusion">Conclusion</a></li>
-                            </ul>
-                    </nav>
+                <nav class="module grid--1 u-span-2 sticky-nav" id="stickyNav">
+                    <ul class="sticky-nav__list">
+                        <li><a class="sticky-nav__link" href="#overview">Overview</a></li>
+                        <li class="sticky-nav__sep ">&bull;</li>
+                        <li><a class="sticky-nav__link" href="#traffic-sources">Traffic Sources</a></li>
+                        <li class="sticky-nav__sep ">&bull;</li>
+                        <li><a class="sticky-nav__link" href="#audience-segments">Audience Segments</a></li>
+                        <li class="sticky-nav__sep ">&bull;</li>
+                        <li><a class="sticky-nav__link" href="#user-behavior">User Behavior</a></li>
+                        <li class="sticky-nav__sep ">&bull;</li>
+                        <li><a class="sticky-nav__link" href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- MODULE 1 -->
+            <article class="module column-1 u-align-content-start">
+                <header class="u-flex-center" id="goal-statement__title">
+                    <h2>
+                        <strong class="token--gold">GOAL</strong>
+                    </h2>
+                </header>
+                <section class="u-flex-left" id="goal-statement">
+                    <p>
+                        Provide a data-driven audit of two retail brands' websites
+                        — anonymized as
+                        <strong class="token--blue">Company A </strong>
+                        and
+                        <strong class="token--red">Company B </strong>
+                        —
+                        and provide recommendations for strategic
+                        improvements
+                    </p>
                 </section>
-                <!-- MODULE 1 -->
-                 <article>
-                    <header>
-                        <h2>
-                            MOD 1 H2 HEADER
-                        </h2>
-                    </header>
-                </article>
+            </article>
+            <article class="module column-2 u-align-content-start">
+                <header class="u-flex-center" id="data-statement__title">
+                    <h2>
+                        <strong class="token--gold">DATA</strong>
+                    </h2>
+                </header>
+                <section class="u-flex-left" id="data-statement">
+                    <p>
+                        Sourced from Similarweb API via Postman and exported as static JSON.
+                        Data is integrated server-side using Express router, Embedded JavaScript
+                        (EJS),
+                        and visualized with Chart.js. All numerical values are generated dynamically
+                    </p>
+                </section>
+            </article>
 
-                <!-- MODULE 2 -->
-                 <article>
-                    <header>
-                        <h2>
-                            MOD 2 H2 HEADER
-                        </h2>
+            <!-- MODULE 2 -->
+            <!-- <article class="module grid--6 u-span-2" id="overview">
+                <header class="module__title u-span-6">
+                    <h2>
+                        Overview
+                    </h2>
+                </header> -->
+                <!-- CARDS -->
+                <!-- <section class="card u-span-2 u-flex-center">
+                    <header class="grid--2 u-span-2 u-flex-center">
+                        <h3 class="card__title card__title--blue">
+                            Insight
+                        </h3>
                     </header>
-                 </article>
+                    <p>
+                        <strong class="token--red">Company B </strong>
+                        averaged
+                    </p>
+                </section>
+                <section class="card u-span-2 u-flex-center">
+                    <header>
+                        <h3 class="card__title card__title--blue">
+                            Insight
+                        </h3>
+                    </header>
+                    <p>
+                        <strong class="token--red">Company B </strong>
+                    </P>
+                </section>
+                <section class="card u-span-2 u-flex-center">
+                    <header>
+                        <h3 class="card__title card__title--gold">
+                            Next Step
+                        </h3>
+                    </header>
+                    <p>
+                        Dig further into the data to understand traffic sources, audience segments,
+                        and user behavior
+                    </p>
+                </section>
+            </article> -->
 
-                <!-- MODULE 3 -->
-                    <article>
-                        <header>
-                            <h2>
-                                MOD 2 H2 HEADER
-                            </h2>
-                        </header>
-                    </article>
+            <!-- MODULE 3 -->
+            <article>
+                <header>
+                    <h2>
+                        MOD 2 H2 HEADER
+                    </h2>
+                </header>
+            </article>
             </section>
         </main>
         <%- include("../partials/footer") %>
 
-    </body>
+</body>
 
 
 </html>

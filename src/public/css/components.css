@@ -1,7 +1,7 @@
 /* ===== Reusable Components ===== */
 
 /*__Heroes__*/
-.hero-case-study {
+.hero-homepage {
   grid-column: span 2;
   background-color: var(--bg-module);
   padding: var(--page-padding);
