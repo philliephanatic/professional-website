@@ -150,31 +150,6 @@
   }
 }
 
-/*__Charts__*/
-.chart {
-  position: relative;
-  margin: auto;
-  max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  .chart {
-    max-height: var(--chart-maxheight);
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1439px) {
-  .chart {
-    max-height: var(--chart-maxheight);
-  }
-}
-
-canvas {
-  width: 100%;
-  height: auto;
-  min-height: var(--chart-minheight);
-}
-
 /*__Sticky Nav__*/
 .sticky-nav {
   position: sticky;
