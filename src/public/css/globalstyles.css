@@ -55,7 +55,9 @@
     --bg-module-white: #ffffff;
     --bg-module-grey: #EDEDED;
     --bg-module-gradient-aqua-moderate: linear-gradient(135deg, #e0faff 0%, #b6edf9 50%, #49d3f2 100%);
-            
+    --bg-module-gradient-green-moderate: linear-gradient(135deg, #def7e7 0%, #c0eacb 50%, #93d9a5 100%);
+    --bg-module-gradient-purple-moderate: linear-gradient(135deg, #e3e9ff 0%, #b7c7ff 50%, #88abf2 100%);
+
 
     --bg-card: rgba(255, 255, 255, 0.05);
     --text-color-inverted: #f5f5f5;
