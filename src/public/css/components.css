@@ -2,20 +2,38 @@
 
 /*__Heroes__*/
 .hero-homepage {
-  grid-column: span 2;
-  background-color: var(--bg-module);
+  display: grid;
+  background-color: var(--bg-module-grey);
   padding: var(--page-padding);
   padding-top: 2rem;
-  align-items: center;
+}
+
+.hero__title {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*__Modules__*/
-.module {
+.module--box-shadow-grey {
   display: grid;
-  background-color: var(--bg-module);
+  background-color: var(--bg-module-grey);
   padding: 1.5rem;
   border-radius: 0.8rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.module--no-box-shadow-white {
+  display: grid;
+  background-color: var(--bg-module-white);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.module--no-box-shadow-gradient-aqua-moderate {
+  display: grid;
+  background: var(--bg-module-gradient-aqua-moderate);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
 }
 
 .module__title {
