@@ -3,14 +3,28 @@
 /*__Heroes__*/
 .hero-homepage {
   display: grid;
-  background-color: var(--bg-module-grey);
-  padding: var(--page-padding);
+  background-color: var(--bg-module-white);
   padding-top: 2rem;
 }
 
+/* WRAPPER - controls layout, spacing, alignment */
 .hero__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Controls typography — size, weight, line-height, letter-spacing, etc. */
+.hero__heading {
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: -0.4rem;
+  /* modern, slightly condensed look */
+}
+
+/* Controls secondary typography */
+.hero__subheading {
+  text-align: center;
 }
 
 /*__Modules__*/
@@ -51,9 +65,19 @@
 }
 
 .module__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.module__heading {
   text-align: center;
   padding: 1.5rem;
   text-transform: uppercase;
+}
+
+.module__subheading {
+  text-align: left;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -117,7 +141,7 @@
 /*__Buttons__*/
 .btn {
   display: inline-block;
-  background: var(--brand-a);
+  background: var(--bg-cta-aqua);
   color: #fff;
   padding: 1.4rem 3rem;
   font-size: var(--fs-cta);
