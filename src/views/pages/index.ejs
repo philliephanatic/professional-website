@@ -12,12 +12,33 @@
             <article class="hero-homepage u-span-2">
                 <header class="hero__title">
                     <h1 class="hero__heading">
-                        H1 HERO Primary Value Prop
+                        Delivering long-term revenue growth through
+                        <span class="hero__typed-wrapper">
+                            <span class="hero__typed-base visually-hidden">conversion rate optimization (CRO)</span>
+                            <span class="hero__typed" aria-hidden="true"></span>
+                        </span>
+
                     </h1>
+
                     <p class="hero__subheading">
                         Supporting copy that explains the value, audience, or differentiator.
                     </p>
+
+                    <!-- Typed animation control -->
+                    <button type="button" class="hero__typed-toggle" aria-pressed="false"
+                        aria-label="Pause animated headline">
+                        Pause animation
+                    </button>
+
                 </header>
+                <!-- Typed.js strings source (hidden visually, present in DOM) -->
+                <div id="hero-typed-strings" class="visually-hidden" aria-hidden="true">
+                    <span>CRO</span>
+                    <span>SEO</span>
+                    <span>data-driven experimentation</span>
+                    <span>customer lifetime value growth</span>
+                </div>
+
             </article>
 
             <!-- MODULE 1 -->
@@ -26,7 +47,7 @@
                     <h2 class="module__heading">
                         H2 Header
                     </h2>
-                     <p class="module__subheading">
+                    <p class="module__subheading">
                         Supporting copy
                     </p>
                 </header>
@@ -113,6 +134,8 @@
 
         </main>
         <%- include("../partials/footer") %>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script src="/js/index.js" defer></script>
 
 </body>
 

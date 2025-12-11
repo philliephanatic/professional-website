@@ -9,12 +9,12 @@
 
 /* WRAPPER - controls layout, spacing, alignment */
 .hero__title {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Controls typography — size, weight, line-height, letter-spacing, etc. */
+/* size, weight, line-height, letter-spacing, etc. */
 .hero__heading {
   text-align: center;
   text-transform: uppercase;
@@ -22,10 +22,44 @@
   /* modern, slightly condensed look */
 }
 
-/* Controls secondary typography */
 .hero__subheading {
   text-align: center;
 }
+
+.hero__typed-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.hero__typed,
+.hero__typed-base {
+  font-family: var(--font-heading);
+}
+
+/* Ensure animated text lines up nicely */
+.hero__typed {
+  white-space: nowrap;
+}
+
+.hero__typed-toggle {
+  margin-top: 1.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  color: var(--color-page-text);
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.hero__typed-toggle:hover,
+.hero__typed-toggle:focus-visible {
+  border-color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
+}
+
+
 
 /*__Modules__*/
 .module--box-shadow-bg-grey {
