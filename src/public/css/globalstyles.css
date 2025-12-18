@@ -60,7 +60,9 @@
     --bg-module-gradient-purple-moderate: linear-gradient(135deg, #e3e9ff 0%, #b7c7ff 50%, #88abf2 100%);
     
     /* CTA colors background */
-    --bg-cta-aqua: linear-gradient(135deg, #49d3f2 0%, #38b4cf 50%, #1d7f99 100%);
+    --bg-primary-cta: #000000;
+    --color-primary-cta-text: #ffffff;
+    --color-secondary-cta-text: rgb(255, 255, 255);
 
     /* Card colors background */
     --bg-card: rgba(255, 255, 255, 0.05);
@@ -204,12 +206,6 @@ body {
     font-size: var(--fs-body);
     line-height: var(--lh-body);
     overflow-x: hidden;
-}
-
-/* Optional page theme modifier for dark case-study pages */
-.page--case-study {
-    background-color: var(--bg-case-study);
-    color: var(--text-color-inverted);
 }
 
 /* Links & media */
