@@ -295,3 +295,24 @@
   border-color: rgba(0, 0, 0, 0.2);
   text-decoration: underline;
 }
+
+/* ===========================
+   LOGO MARQUEE (Swiper)
+   =========================== */
+
+
+
+.logo-marquee__swiper {
+
+}
+
+.swiper-wrapper {
+  width: 25% !important;
+  align-items: baseline; 
+  height: 10rem;
+}
+
+.swiper-wrapper img {
+  height: 10rem;
+  width: 5rem;
+}

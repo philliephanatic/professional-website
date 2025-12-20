@@ -13,6 +13,10 @@
   }
 }
 
+.grid {
+    display: grid;
+}
+
 .grid--1 {
   grid-template-columns: 1fr;
 }
@@ -41,7 +45,6 @@
   display: flex;
 }
 
-/* Flex Content Alignment */
 .u-flex-center {
     display: flex;
     justify-content: center;
@@ -60,12 +63,10 @@
     height: 100%;
 }
 
-/* Grid Content Alignment */
 .u-align-content-start {
     align-content: start;
 }
 
-/* span */
 .u-span-2 {
     grid-column: span 2;
 }
@@ -78,7 +79,6 @@
     grid-column: span 6;
 }
 
-/* Text Alignment */
 .u-text-center {
     text-align: center;
 }

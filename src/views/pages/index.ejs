@@ -30,22 +30,45 @@
             </article>
 
             <!-- MODULE 1 -->
-            <article class="module--bg-white u-span-2">
+            <section class="module--bg-white u-span-2">
                 <header class="module__title">
                     <h2 class="module__heading">
                         Companies I’ve driven impact for
                     </h2>
+                    <p class="module__subheading">
+                        Selected brands where I’ve owned web strategy, execution, and optimization across high-traffic
+                        experiences.
+                    </p>
                 </header>
-            </article>
-            <article class="module--bg-white u-flex-center u-span-2">
-                <p>
-                    Logo Scroll
-                </p>
-            </article>
+
+                <div class="logo-marquee__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide logo-marquee__slide">
+                            <img class="logo-marquee__img" src="/img/Shutterstock.svg" alt="Shutterstock" loading="lazy" width="160"
+                                height="48">
+                        </div>
+                        <div class="swiper-slide logo-marquee__slide">
+                            <img class="logo-marquee__img" src="/img/TWDC01.svg" alt="Disney" loading="lazy" width="160"
+                                height="48">
+                        </div>
+                        <div class="swiper-slide logo-marquee__slide">
+                            <img class="logo-marquee__img" src="/img/BX.svg" alt="Blackstone" loading="lazy" width="160"
+                                height="48">
+                        </div>
+                        <div class="swiper-slide logo-marquee__slide">
+                            <img class="logo-marquee__img" src="/img/NBCU02.svg" alt="NBCU" loading="lazy"
+                                width="160" height="48">
+                        </div>
+                        <div class="swiper-slide logo-marquee__slide">
+                            <img class="logo-marquee__img" src="/img/Broadway_Video.svg" alt="Blackstone" loading="lazy"
+                                width="160" height="48">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             <!-- MODULE 2 -->
-
-
             <article class="module--gradient-bg-aqua-moderate column-1 u-align-content-start">
                 <header class="module__title">
                     <h2 class="module__heading">
@@ -124,7 +147,9 @@
 
         </main>
         <%- include("../partials/footer") %>
-            <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
             <script src="/js/index.js" defer></script>
 
 </body>
