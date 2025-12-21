@@ -8,7 +8,7 @@
 }
 
 .hero__heading {
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: -0.4rem;
 }
@@ -18,7 +18,7 @@
 }
 
 .hero__subheading {
-  text-align: center;
+  text-align: left;
 }
 
 .module__title {
@@ -28,8 +28,8 @@
 }
 
 .module__heading {
-  text-align: center;
-  padding: 1.5rem;
+  text-align: left;
+  /* padding: 1.5rem; */
   text-transform: uppercase;
 }
 
@@ -300,19 +300,101 @@
    LOGO MARQUEE (Swiper)
    =========================== */
 
-
-
-.logo-marquee__swiper {
-
+/* Swiper root + BEM block */
+.logo-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* required for fade edges */
 }
 
+/* Keep as-is per your instruction */
 .swiper-wrapper {
-  width: 25% !important;
-  align-items: baseline; 
-  height: 10rem;
+  width: 50% !important;
+  align-items: baseline;
 }
 
-.swiper-wrapper img {
-  height: 10rem;
-  width: 5rem;
+/* BEM track layer (optional, but useful for specificity) */
+.logo-marquee__track {
+  align-items: baseline;
+}
+
+/* Slide sizing */
+.logo-marquee__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 2.4rem;
+  flex-shrink: 0;
+}
+
+/* Logo sizing — this is what fixes "box grows but image doesn't" */
+.logo-marquee__img {
+  height: 20rem;  /* adjust to taste */
+  width: auto;   /* preserve aspect ratio */
+  max-width: none;
+  display: block;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.logo-marquee__img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Fade edges */
+.logo-marquee::before,
+.logo-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 6rem;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-marquee::before {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    var(--color-page-bg) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.logo-marquee::after {
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    var(--color-page-bg) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* KEY: remove easing so motion is constant */
+.logo-marquee .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* Responsive sizing */
+@media (max-width: 767px) {
+  .logo-marquee__img {
+    height: 20rem;
+  }
+
+  .logo-marquee__slide {
+    padding: 1rem 1.6rem;
+  }
+
+  .logo-marquee::before,
+  .logo-marquee::after {
+    width: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-marquee__img {
+    height: 7rem;
+  }
 }

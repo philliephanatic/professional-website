@@ -1,22 +1,30 @@
 // src/public/js/index.js
 document.addEventListener("DOMContentLoaded", () => {
-  const sliderEl = document.querySelector(".logo-marquee__swiper");
-  if (!sliderEl || typeof Swiper === "undefined") return;
+  const marqueeEl = document.querySelector(".logo-marquee.swiper");
+  if (!marqueeEl || typeof Swiper === "undefined") return;
 
-  // Continuous-style marquee
-  new Swiper(".logo-marquee__swiper", {
+  new Swiper(marqueeEl, {
     slidesPerView: "auto",
     spaceBetween: 24,
     loop: true,
-    speed: 3000, // higher = slower scroll because it's the duration
-    allowTouchMove: true, // keep it usable on mobile
+
+    // "Marquee" feel: delay 0 + higher speed = smoother continuous movement
+    speed: 3000,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true, // UX: lets users inspect logos without motion
     },
+
+    allowTouchMove: true,
+    grabCursor: true,
+
+    // Keeps Swiper happy when widths are dynamic (logos vary)
+    watchSlidesProgress: true,
+
     breakpoints: {
       0: {
-        spaceBetween: 0,
+        spaceBetween: 5,
         slidesPerView: "auto",
       },
       768: {
@@ -28,10 +36,3 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
-
-// const swiper = new Swiper('.swiper', {
-//   speed: 400,
-//   spaceBetween: 100,
-// });
-
-// const swiper = document.querySelector('.swiper').swiper;
