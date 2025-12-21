@@ -29,7 +29,6 @@
 
 .module__heading {
   text-align: left;
-  /* padding: 1.5rem; */
   text-transform: uppercase;
 }
 
@@ -189,9 +188,9 @@
 }
 
 @media (max-width: 425px) {
-  .sticky-nav a {
+  /* .sticky-nav a {
     font-size: 1rem;
-  }
+  } */
 
   .sticky-nav__sep {
     display: none;
@@ -199,9 +198,9 @@
 }
 
 @media (max-width: 375px) {
-  .sticky-nav a {
+  /* .sticky-nav a {
     font-size: 0.95rem;
-  }
+  } */
 
   .sticky-nav__list {
     justify-content: space-around;
@@ -213,9 +212,9 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .sticky-nav a {
+  /* .sticky-nav a {
     font-size: 2.2rem;
-  }
+  } */
 
   .sticky-nav__list {
     justify-content: space-around;
@@ -223,9 +222,9 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1999px) {
-  .sticky-nav a {
+  /* .sticky-nav a {
     font-size: 2.5rem;
-  }
+  } */
 
   .sticky-nav__list {
     justify-content: space-around;
@@ -300,20 +299,24 @@
    LOGO MARQUEE (Swiper)
    =========================== */
 
-/* Swiper root + BEM block */
 .logo-marquee {
   width: 100%;
   overflow: hidden;
-  position: relative; /* required for fade edges */
+  position: relative;
 }
 
-/* Keep as-is per your instruction */
 .swiper-wrapper {
   width: 50% !important;
   align-items: baseline;
 }
 
-/* BEM track layer (optional, but useful for specificity) */
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    width: 25% !important;
+    align-items: baseline;
+  }
+}
+
 .logo-marquee__track {
   align-items: baseline;
 }
@@ -327,10 +330,10 @@
   flex-shrink: 0;
 }
 
-/* Logo sizing — this is what fixes "box grows but image doesn't" */
 .logo-marquee__img {
-  height: 20rem;  /* adjust to taste */
-  width: auto;   /* preserve aspect ratio */
+  height: 20rem;
+  width: auto;
+  /* preserve aspect ratio */
   max-width: none;
   display: block;
   opacity: 0.9;
@@ -356,20 +359,16 @@
 
 .logo-marquee::before {
   left: 0;
-  background: linear-gradient(
-    90deg,
-    var(--color-page-bg) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--color-page-bg) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .logo-marquee::after {
   right: 0;
-  background: linear-gradient(
-    270deg,
-    var(--color-page-bg) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(270deg,
+      var(--color-page-bg) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 /* KEY: remove easing so motion is constant */
@@ -395,6 +394,6 @@
 
 @media (min-width: 1024px) {
   .logo-marquee__img {
-    height: 7rem;
+    height: 25rem;
   }
 }

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
-      pauseOnMouseEnter: true, // UX: lets users inspect logos without motion
+      pauseOnMouseEnter: false, // UX: lets users inspect logos without motion
     },
 
     allowTouchMove: true,
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: "auto",
       },
       768: {
-        spaceBetween: 24,
+        spaceBetween: 14,
       },
       1024: {
         spaceBetween: 32,
