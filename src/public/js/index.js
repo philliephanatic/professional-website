@@ -1,4 +1,6 @@
 // src/public/js/index.js
+
+// logo marquee
 document.addEventListener("DOMContentLoaded", () => {
   const marqueeEl = document.querySelector(".logo-marquee.swiper");
   if (!marqueeEl || typeof Swiper === "undefined") return;
@@ -36,3 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
+
+// FAQ single open
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".faq__item");
+
+  items.forEach(item => {
+    item.addEventListener("toggle", () => {
+      if (item.open) {
+        items.forEach(other => {
+          if (other !== item) other.open = false;
+        });
+      }
+    });
+  });
+});
+
