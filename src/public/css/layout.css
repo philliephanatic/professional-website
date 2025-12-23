@@ -57,6 +57,12 @@
     align-items: flex-start;
 }
 
+.u-flex-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .u-flex-baseline {
     display: flex;
     align-items: baseline;

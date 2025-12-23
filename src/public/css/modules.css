@@ -3,17 +3,18 @@
 .hero-homepage {
     display: grid;
     background-color: var(--bg-module-white);
-    padding-top: 2rem;
+    padding: 2rem 0.5rem 0rem 0.5rem;
+    /* top, right, bottom, left */
 }
 
 .module-one {
-    padding-top: 3rem;
+    padding-top: 4rem !important;
 }
 
 .module--box-shadow-bg-grey {
     display: grid;
     background-color: var(--bg-module-grey);
-    padding: 1.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border-radius: 0.8rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
@@ -21,6 +22,7 @@
 .module--box-shadow-bg-white {
     display: grid;
     background-color: var(--bg-module-white);
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border-radius: 0.8rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
@@ -28,26 +30,27 @@
 .module--bg-white {
     display: grid;
     background-color: var(--bg-module-white);
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border-radius: 0.8rem;
 }
 
 .module--gradient-bg-aqua-moderate {
     display: grid;
     background: var(--bg-module-gradient-aqua-moderate);
-    padding: 1.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border-radius: 0.8rem;
 }
 
 .module--gradient-bg-green-moderate {
     display: grid;
     background: var(--bg-module-gradient-green-moderate);
-    padding: 1.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border-radius: 0.8rem;
 }
 
 .module--gradient-bg-purple-moderate {
     display: grid;
     background: var(--bg-module-gradient-purple-moderate);
-    padding: 1.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     border-radius: 0.8rem;
 }
