@@ -44,21 +44,21 @@
 .module--gradient-bg-aqua-moderate {
     display: grid;
     background: var(--bg-module-gradient-aqua-moderate);
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding:var(--module-padding);
     border-radius: 0.8rem;
 }
 
 .module--gradient-bg-green-moderate {
     display: grid;
     background: var(--bg-module-gradient-green-moderate);
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: var(--module-padding);
     border-radius: 0.8rem;
 }
 
 .module--gradient-bg-purple-moderate {
     display: grid;
     background: var(--bg-module-gradient-purple-moderate);
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: var(--module-padding);
     border-radius: 0.8rem;
 }
 

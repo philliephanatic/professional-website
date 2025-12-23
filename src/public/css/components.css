@@ -414,3 +414,69 @@
   opacity: 0.6;
   margin-bottom: 0.8rem;
 }
+
+/* ===========================
+   FAQ / ACCORDION
+   =========================== */
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.faq__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding-top: 1.6rem;
+}
+
+.faq__item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 1.6rem;
+}
+
+/* Remove default disclosure triangle */
+.faq__question {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: var(--fs-body);
+  font-weight: 575;
+  line-height: var(--lh-tight);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+/* Plus / minus indicator */
+.faq__question::after {
+  content: "+";
+  font-size: 2.2rem;
+  font-weight: 300;
+  transition: transform 0.25s ease;
+}
+
+.faq__item[open] .faq__question::after {
+  content: "–";
+}
+
+/* Answer panel */
+.faq__answer {
+  padding-top: 1.2rem;
+  max-width: 72rem;
+}
+
+.faq__answer p {
+  opacity: 0.85;
+}
+
+/* Focus styles */
+.faq__question:focus-visible {
+  outline: 2px solid var(--brand-a);
+  outline-offset: 4px;
+}

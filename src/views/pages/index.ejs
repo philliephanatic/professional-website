@@ -211,72 +211,115 @@
                     </p>
                 </section>
             </article>
-
-            <!-- <article class="module--gradient-bg-aqua-moderate column-2 u-align-content-start">
-                <header class="u-flex-center">
-                    <h2>
-                        IMAGE
-                    </h2>
-                </header>
-                <section class="u-flex-left">
-                    <p>
-                        MODULE 1 - IMAGE
-                    </p>
-                </section>
-            </article> -->
-
             <!-- MODULE 3 -->
-            <article class="module--bg-light-blue column-1 u-align-content-start">
-                <header class="u-flex-center">
-                    <h2>
-                        How this site is built
-                    </h2>
-                </header>
-                <section class="u-flex-left">
-                    <p>
-                        Short technical explanation.
-                    </p>
+            <article class="module--gradient-bg-green-moderate grid--3 u-span-2">
+                <section class="column-1">
+                    <header class="module__heading">
+                        <h2>
+                            column 1
+                        </h2>
+                        <p>
+                            Body copy
+                        </p>
+                    </header>
+                </section>
+                <section class="column-2">
+                    <header class="module__subheading">
+                        <p class="u-flex-center">
+                            space
+                        </p>
+                    </header>
+                </section>
+                <section class="column-3">
+                    <header class="module__heading">
+                        <h2>
+                            column 3
+                        </h2>
+                        <p>
+                            Body copy
+                        </p>
+                    </header>
                 </section>
             </article>
-            <article class="module--gradient-bg-green-moderate column-2 u-align-content-start">
-                <header class="u-flex-center">
-                    <h2>
-                        MODULE 3 TBD
-                    </h2>
-                </header>
-                <section class="u-flex-left">
-                    <p>
-                        TBD
-                    </p>
-                </section>
-            </article>
+
 
             <!-- MODULE 4 -->
-            <article class="module--gradient-bg-purple-moderate column-1 u-align-content-start">
-                <header class="u-flex-center">
-                    <h2>
+            <article class="module--bg-white u-span-2">
+                <span class="module__eyebrow">Working Style</span>
+                <header class="module__title">
+                    <h2 class="module__heading">
                         Frequently asked questions
                     </h2>
                 </header>
-                <section class="u-flex-left">
-                    <p>
-                        MODULE 4 Text P or H3?
-                    </p>
-                </section>
-            </article>
-            <article class="module--gradient-bg-purple-moderate column-2 u-align-content-start">
-                <header class="u-flex-center">
-                    <h2>
-                        MODULE 4 TBD
-                    </h2>
-                </header>
-                <section class="u-flex-left">
-                    <p>
-                        MODULE 4 TBD
-                    </p>
-                </section>
-            </article>
 
+                <div class="faq__list">
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            What types of roles or projects are you most interested in?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                I’m most effective in roles where web experience, data, and strategy intersect—such as
+                                website optimization, CRO, SEO, and growth-focused web marketing. I enjoy working on
+                                high-impact surfaces that directly influence acquisition, engagement, and revenue.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            Are you more technical or more strategic?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                Both—and that’s intentional. I’m comfortable working directly with HTML, CSS,
+                                JavaScript, analytics, and experimentation tools, but I focus on why we’re building
+                                something just as much as how. The goal is business impact, not technical novelty.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            Why not use a CMS or website builder for this site?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                This site is intentionally custom-built to demonstrate how I think about performance,
+                                scalability, and maintainability. For many organizations, a CMS is the right choice—but
+                                understanding what’s happening under the hood is critical to making good decisions at
+                                scale.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            What makes you different from other web marketers?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                I focus on outcomes, not outputs. I care about conversion rates, discoverability, and
+                                system-level improvements—not just launches. I also prioritize clean execution and
+                                long-term maintainability over quick wins that don’t scale.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            Is this site still a work in progress?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                Yes—by design. The site follows the same MVP-and-iterate philosophy I use
+                                professionally. It will continue to evolve as new ideas, experiments, and learnings
+                                emerge.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </article>
 
         </main>
         <%- include("../partials/footer") %>
@@ -286,6 +329,5 @@
             <script src="/js/index.js" defer></script>
 
 </body>
-
 
 </html>
