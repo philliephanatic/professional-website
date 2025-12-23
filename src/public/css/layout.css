@@ -53,14 +53,12 @@
 
 .u-flex-left {
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .u-flex-right {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
 }
 
 .u-flex-baseline {
@@ -69,8 +67,19 @@
     height: 100%;
 }
 
+.u-flex-start {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
 .u-align-content-start {
-    align-content: start;
+    display: flex;
+    align-content: flex-start;
 }
 
 .u-span-2 {
@@ -85,6 +94,3 @@
     grid-column: span 6;
 }
 
-.u-text-center {
-    text-align: center;
-}
