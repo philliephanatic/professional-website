@@ -91,28 +91,36 @@
   justify-content: start;
   padding: var(--card-padding);
   alignment-baseline: text-top;
-  background: var(--bg-card);
+  background: var(--bg-card-off-white);
   border-radius: 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  border: 1px solid var(--border-card-white);
   margin: 0.5rem;
 
 }
 
-.card__title {
-  font-size: var(--fs-card-title);
+.card__heading {
+  font-size: var(--fs-card-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-bottom: 0.5rem;
-  padding: 0;
+  padding: 0rem;
   text-align: center;
   text-wrap: nowrap;
 }
 
-.card ol {
-  display: grid;
-  grid-template-rows: repeat(3, 0.25fr);
-  gap: 1rem;
+.card__subheading {
+  font-size: var(--fs-card-subheading);
+  font-weight: 500;
+  padding: 0rem;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.card__body {
+  padding: 0rem;
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
 .card__title--blue {
@@ -398,11 +406,11 @@
   }
 }
 
+/* module__eyebrow */
 .module__eyebrow {
   font-size: 1.2rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.6;
-  /* padding-right: 0.5rem; */
   margin-bottom: 0.8rem;
 }
