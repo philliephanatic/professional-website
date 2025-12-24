@@ -3,12 +3,8 @@
 .hero-homepage {
     display: grid;
     background-color: var(--bg-module-white);
-    padding: 2rem 0.5rem 0rem 0.5rem;
+    padding: 2rem 0.5rem 6rem 0.5rem;
     /* top, right, bottom, left */
-}
-
-.module-one {
-    padding-top: 4rem !important;
 }
 
 .module--box-shadow-bg-grey {
