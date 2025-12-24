@@ -14,7 +14,7 @@
 }
 
 .hero__heading--red {
-  color: var(--color-page-text-emphasis);
+  color: var(--text-color-emphasis);
 }
 
 .hero__heading span {
@@ -70,6 +70,12 @@
 @media (min-width: 768px) {
   .hero__cta {
     max-width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero__cta {
+    max-width: 33%;
   }
 }
 
@@ -338,7 +344,7 @@
 
 /* module__eyebrow */
 .module__eyebrow {
-  font-size: 1.2rem;
+  font-size: var(--fs-eyebrow);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.6;

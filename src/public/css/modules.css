@@ -7,6 +7,12 @@
     /* top, right, bottom, left */
 }
 
+@media (min-width: 768px) {
+    .hero-homepage {
+        padding-left: 2rem;
+    }
+}
+
 .module--box-shadow-bg-grey {
     display: grid;
     background-color: var(--bg-module-grey);

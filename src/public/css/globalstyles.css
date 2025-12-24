@@ -48,11 +48,13 @@
     --font-body: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
-    /* Page colors background */
-    --color-page-bg: #ffffff;
-    --color-page-text: #000000;
-    --color-page-text-emphasis: #AA1717;
-    
+    /* Text colors */
+    --text-color-primary: #000000;
+    --text-color-emphasis: #AA1717;
+
+    /* Page color */
+    --page-color-primary: #ffffff;
+
     /* Module colors background */
     --bg-module-white: #ffffff;
     --bg-module-grey: #EDEDED;
@@ -70,10 +72,6 @@
     --bg-card-off-white: rgba(255, 255, 255, 0.05);
     --border-card-white: #ffffff;
 
-    /* Brand colors */
-    --brand-a: #36a2eb;
-    --brand-b: #ff6384;
-    --accent: gold;
 
     /* Spacing */
     --container-gap: 1.5rem;
@@ -109,6 +107,7 @@
         --page-padding: 1rem;
         --card-padding: 0.75rem;
         --module-padding: 0.5rem;
+        --header-padding: 1rem 2rem;
 
         /* Font sizes */
         --fs-h1: 4.2rem;
@@ -117,6 +116,8 @@
         --fs-body: 1.4rem;
         --fs-cta: 2.0rem;
         --fs-card-heading: 1.6rem;
+        --fs-eyebrow: 0.9rem;
+
     }
 }
 
@@ -126,6 +127,8 @@
         /* Spacing */
         --page-padding: 1rem 2rem;
         --card-padding: 1rem;
+        --module-padding: 2rem;
+        --header-padding: 1rem 4rem;
 
         /* Font sizes */
         --fs-h1: 4.2rem;
@@ -133,7 +136,9 @@
         --fs-h3: 2.0rem;
         --fs-body: 1.5rem;
         --fs-cta: 2.2rem;
-        --fs-card-heading: 1.7rem;
+        --fs-card-heading: 1.8rem;
+        --fs-eyebrow: 1rem;
+
     }
 }
 
@@ -143,6 +148,7 @@
         /* Spacing */
         --page-padding: 1rem 4rem;
         --card-padding: 1rem;
+        --header-padding: 1rem 6rem;
 
         /* Font sizes */
         --fs-h1: 5.0rem;
@@ -150,7 +156,8 @@
         --fs-h3: 2.8rem;
         --fs-body: 1.6rem;
         --fs-cta: 2.4rem;
-        --fs-card-heading: 1.8rem;
+        --fs-card-heading: 2.6rem;
+        --fs-eyebrow: 1.1rem;
     }
 }
 
@@ -160,6 +167,7 @@
         /* Spacing */
         --page-padding: 2rem 6rem;
         --card-padding: 1rem;
+        --header-padding: 1rem 8rem;
 
         /* Font sizes */
         --fs-h1: 6.2rem;
@@ -167,7 +175,8 @@
         --fs-h3: 4.0rem;
         --fs-body: 1.8rem;
         --fs-cta: 3.0rem;
-        --fs-card-heading: 2.0rem;
+        --fs-card-heading: 3.2rem;
+        --fs-eyebrow: 1.3rem;
     }
 }
 
@@ -177,6 +186,7 @@
         /* Spacing */
         --page-padding: 4rem 50rem;
         --card-padding: 1rem;
+        --header-padding: 2rem 52rem;
 
         /* Font sizes */
         --fs-h1: 6.2rem;
@@ -184,7 +194,8 @@
         --fs-h3: 4.0rem;
         --fs-body: 1.8rem;
         --fs-cta: 3.0rem;
-        --fs-card-heading: 2.0rem;
+        --fs-card-heading: 3.2rem;
+        --fs-eyebrow: 2.0rem;
     }
 }
 
@@ -208,7 +219,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: var(--color-page-bg);
-    color: var(--color-page-text);
+    color: var(--text-color-primary);
     font-family: var(--font-body);
     font-size: var(--fs-body);
     line-height: var(--lh-body);
@@ -249,7 +260,7 @@ h2,
 h3 {
     margin: 0;
     font-family: var(--font-heading);
-    color: var(--color-page-text);
+    color: var(--text-color-primary);
     line-height: var(--lh-tight);
 }
 
@@ -290,16 +301,4 @@ h3+p {
 
 p+p {
     margin-top: 0.75rem;
-}
-
-/* ===========================
-   LAYOUT UTILITIES
-   =========================== */
-
-.layout-container {
-    width: 100%;
-    max-width: 112rem;
-    /* 1120px */
-    margin-inline: auto;
-    padding-inline: var(--page-padding);
 }
