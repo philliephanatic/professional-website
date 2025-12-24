@@ -51,6 +51,7 @@
     /* Page colors background */
     --color-page-bg: #ffffff;
     --color-page-text: #000000;
+    --color-page-text-emphasis: #AA1717;
     
     /* Module colors background */
     --bg-module-white: #ffffff;
