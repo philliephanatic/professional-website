@@ -50,6 +50,8 @@
     border-radius: 0.8rem;
 }
 
+
+
 .module--gradient-bg-green-moderate {
     display: grid;
     background: var(--bg-module-gradient-green-moderate);
