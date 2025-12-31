@@ -2,8 +2,10 @@
 
 .hero-homepage {
     display: grid;
-    background-color: var(--bg-module-white);
-    padding: 2rem 0.5rem 6rem 0.5rem;
+    background-color: inherit;
+    padding: 2rem 0.5rem 1.2rem 0.5rem;
+    /* background: var(--bg-module-gradient-aqua-moderate); */
+    border-radius: 0.8rem;
     /* top, right, bottom, left */
 }
 
@@ -43,6 +45,15 @@
     border-radius: 0.8rem;
 }
 
+.module--bg-inherit {
+    display: grid;
+    background-color: inherit;
+    padding: var(--module-padding);
+    border-radius: 0.8rem;
+    background-color: black;
+    border-width: 1rem;
+}
+
 .module--gradient-bg-aqua-moderate {
     display: grid;
     background: var(--bg-module-gradient-aqua-moderate);
@@ -64,6 +75,15 @@
     background: var(--bg-module-gradient-purple-moderate);
     padding: var(--module-padding);
     border-radius: 0.8rem;
+}
+
+.module--bg-inherit {
+    display: grid;
+    background: inherit;
+    padding: var(--module-padding);
+    border-radius: 0.8rem;
+    border-color: white;
+    border-width: 1rem;
 }
 
 .card ol {

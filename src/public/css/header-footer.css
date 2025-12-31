@@ -141,13 +141,16 @@
 /*__FOOTER_START__*/
 .site-footer {
     color: var(--text-color-primary);
+    
+
     text-align: center;
-    background-color: var(--color-page-bg);
+    /* background-color: var(--bg-footer); */
+    background-color: inherit;
 }
 
-.site-footer p {
-    color: var(--text-color-primary);
-}
+/* .site-footer p {
+    color: white;
+} */
 
 .site-footer-wrapper {
     display: flex;
