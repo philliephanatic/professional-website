@@ -15,3 +15,11 @@
 #impact-highlights h3 {
     font-size: var(--fs-card-heading);
 }
+
+#ai-modern-workflow {
+    padding-bottom: 1.9rem;
+}
+
+#faq .faq__list {
+    padding-bottom: 2rem;
+}
