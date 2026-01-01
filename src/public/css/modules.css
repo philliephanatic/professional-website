@@ -45,23 +45,12 @@
     border-radius: 0.8rem;
 }
 
-.module--bg-inherit {
-    display: grid;
-    background-color: inherit;
-    padding: var(--module-padding);
-    border-radius: 0.8rem;
-    background-color: black;
-    border-width: 1rem;
-}
-
 .module--gradient-bg-aqua-moderate {
     display: grid;
     background: var(--bg-module-gradient-aqua-moderate);
     padding:var(--module-padding);
     border-radius: 0.8rem;
 }
-
-
 
 .module--gradient-bg-green-moderate {
     display: grid;
@@ -70,20 +59,20 @@
     border-radius: 0.8rem;
 }
 
+.module--box-shadow-gradient-bg-green-moderate {
+    display: grid;
+    background: var(--bg-module-gradient-green-moderate);
+    padding: var(--module-padding);
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+}
+
 .module--gradient-bg-purple-moderate {
     display: grid;
     background: var(--bg-module-gradient-purple-moderate);
     padding: var(--module-padding);
     border-radius: 0.8rem;
-}
-
-.module--bg-inherit {
-    display: grid;
-    background: inherit;
-    padding: var(--module-padding);
-    border-radius: 0.8rem;
-    border-color: white;
-    border-width: 1rem;
 }
 
 .card ol {

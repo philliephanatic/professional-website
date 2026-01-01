@@ -144,14 +144,6 @@
   margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
-.card__title--blue {
-  color: var(--brand-a);
-}
-
-.card__title--gold {
-  color: var(--accent);
-}
-
 /*__Sticky Nav__*/
 .sticky-nav {
   position: sticky;
@@ -267,11 +259,6 @@
   }
 }
 
-/* .logo-marquee__track {
-  align-items: baseline;
-} */
-
-/* Slide sizing */
 .logo-marquee__slide {
   display: flex;
   align-items: center;
@@ -310,14 +297,14 @@
 .logo-marquee::before {
   left: 0;
   background: linear-gradient(90deg,
-      var(--color-page-bg) 0%,
+      var(--page-color-primary) 0%,
       rgba(255, 255, 255, 0) 100%);
 }
 
 .logo-marquee::after {
   right: 0;
   background: linear-gradient(270deg,
-      var(--color-page-bg) 0%,
+      var(--page-color-primary) 0%,
       rgba(255, 255, 255, 0) 100%);
 }
 
@@ -353,37 +340,24 @@
   padding-bottom: 1.2rem;
 }
 
-.ai-carousel__track {
+/* .ai-carousel__track {
   align-items: stretch;
-}
+} */
 
-
-/* IMPORTANT: let Swiper control width; do not force wrapper width */
-.ai-carousel__track {
+/* .ai-carousel__track {
   align-items: center;
-}
+} */
 
-/* Slide sizing approach: let Swiper set widths via slidesPerView; keep consistent height */
 .ai-carousel__slide {
   height: auto;
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: #ffffff;
   border-radius: 1.2rem;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16); */
   padding: var(--carousel-card-padidng);
 }
 
-
-/* Your .card exists — we’re just making it feel “post-like” here */
-/* .ai-carousel__slide.card {
-  border: 1px solid rgba(0, 0, 0, 0.10);
-  background: #ffffff;
-  border-radius: 1.2rem;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-} */
-
-/* Copy styling */
 .ai-carousel__text {
   margin: 0;
   font-size: var(--fs-body);
@@ -391,17 +365,7 @@
   overflow-wrap: anywhere;
 }
 
-/* Optional: make it feel like a LinkedIn “carousel tile” */
-/* .ai-carousel__slide.card {
-  padding: 1.6rem;
-} */
-
-/* Pagination dots: minimal + premium */
-.ai-carousel__pagination {
-  margin-top: 1.2rem;
-  padding-bottom: 0.4rem; /* gives the dots air */
-}
-
+/* Pagination dots */
 .ai-carousel__pagination .swiper-pagination-bullet {
   opacity: 0.25;
 }
@@ -410,16 +374,9 @@
   opacity: 0.75;
 }
 
- .ai-carousel__scrollbar {
-  margin: 1.4rem;
- }
-
 .ai-carousel__text span {
   display: block;
 }
-
-
-
 
 /* ===========================
    FAQ / ACCORDION
@@ -483,12 +440,13 @@
 
 /* Focus styles */
 .faq__question:focus-visible {
-  outline: 2px solid var(--brand-a);
+  outline: 2px solid var(--text-color-emphasis);
   outline-offset: 4px;
 }
 
 .solution-icon::before {
   content: "→";
+  font-weight: 700;
 }
 
 /* module__eyebrow */
@@ -498,6 +456,7 @@
   text-transform: uppercase;
   opacity: 0.6;
   margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .font-weight-700 {

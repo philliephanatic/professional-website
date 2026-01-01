@@ -7,3 +7,11 @@
         grid-column: span 2;
     }
 }
+
+#faq h2 {
+    margin-bottom: 1.4rem;
+}
+
+#impact-highlights h3 {
+    font-size: var(--fs-card-heading);
+}
