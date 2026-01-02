@@ -30,12 +30,11 @@
     border-radius: 0.8rem;
 }
 
-.module--box-shadow-bg-white {
+.module--bg-black {
     display: grid;
-    background-color: var(--bg-module-white);
+    background-color: var(--bg-module-black);
     padding: var(--module-padding);
     border-radius: 0.8rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .module--bg-white {
@@ -43,6 +42,14 @@
     background-color: var(--bg-module-white);
     padding: var(--module-padding);
     border-radius: 0.8rem;
+}
+
+.module--box-shadow-bg-white {
+    display: grid;
+    background-color: var(--bg-module-white);
+    padding: var(--module-padding);
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .module--gradient-bg-aqua-moderate {

@@ -1,3 +1,16 @@
+#experience .module__eyebrow {
+    color: #ffffff;
+    opacity: 100%;
+}
+
+#experience .module__subheading {
+    color: #ffffff;
+}
+
+#experience .module__heading {
+    color: #ffffff;
+}
+
 @media (min-width: 768px) {
     #technical-skills {
           grid-template-columns: repeat(2, 1fr);

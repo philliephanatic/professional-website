@@ -59,6 +59,7 @@
     /* Module colors background */
     --bg-module-white: #ffffff;
     --bg-module-grey: #EDEDED;
+    --bg-module-black: #000000;
     --bg-module-light-blue: #e4f2fe;
     --bg-module-gradient-aqua-moderate: linear-gradient(135deg, #e0faff 0%, #b6edf9 50%, #49d3f2 100%);
     --bg-module-gradient-green-moderate: linear-gradient(135deg, #def7e7 0%, #c0eacb 50%, #93d9a5 100%);

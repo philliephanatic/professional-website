@@ -1,5 +1,6 @@
 // src/public/js/index.js
 document.addEventListener("DOMContentLoaded", () => {
+
   // LOGO MARQUEE
   const marqueeEl = document.querySelector(".logo-marquee.swiper");
   if (marqueeEl && typeof Swiper !== "undefined") {
@@ -17,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       grabCursor: true,
       watchSlidesProgress: true,
       breakpoints: {
-        0: { spaceBetween: 5, slidesPerView: "auto" },
-        768: { spaceBetween: 14 },
+        0: { spaceBetween: 55 },
+        768: { spaceBetween: 54 },
         1024: { spaceBetween: 32 },
       },
     });

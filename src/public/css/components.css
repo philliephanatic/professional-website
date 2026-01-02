@@ -250,7 +250,8 @@
 .logo-marquee .swiper-wrapper {
   width: 50% !important;
   align-items: baseline;
-  transition-timing-function: linear !important; /* constant motion */
+  transition-timing-function: linear !important; 
+  /* constant motion */
 }
 
 @media (min-width: 768px) {
@@ -297,21 +298,21 @@
 .logo-marquee::before {
   left: 0;
   background: linear-gradient(90deg,
-      var(--page-color-primary) 0%,
+      var(--bg-module-black) 0%,
       rgba(255, 255, 255, 0) 100%);
 }
 
 .logo-marquee::after {
   right: 0;
   background: linear-gradient(270deg,
-      var(--page-color-primary) 0%,
+      var(--bg-module-black) 0%,
       rgba(255, 255, 255, 0) 100%);
 }
 
 @media (max-width: 767px) {
-  .logo-marquee__img {
-    height: 18rem;
-  }
+  /* .logo-marquee__img {
+    height: 25%;
+  } */
 
   .logo-marquee__slide {
     padding: 1rem 1.6rem;
@@ -325,7 +326,7 @@
 
 @media (min-width: 1024px) {
   .logo-marquee__img {
-    height: 25rem;
+    height: 20rem;
   }
 }
 
