@@ -154,11 +154,6 @@
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 5px;
 
-        /* --header-padding: 1rem 4rem;
-        --footer-padding: 1rem 2rem;
-        --footer-icon-size: 6rem;
-        --footer-copy-size: 1.25rem; */
-
     }
 }
 
@@ -183,10 +178,6 @@
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 1px;
 
-        /* --header-padding: 1rem 8rem;
-    --footer-padding: 2rem 6rem;
-    --footer-icon-size: 8rem;
-    --footer-copy-size: 1.75rem; */
     }
 }
 

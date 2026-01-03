@@ -354,14 +354,6 @@
   padding-bottom: 1.2rem;
 }
 
-/* .ai-carousel__track {
-  align-items: stretch;
-} */
-
-/* .ai-carousel__track {
-  align-items: center;
-} */
-
 .ai-carousel__slide {
   height: auto;
   display: flex;
@@ -390,6 +382,9 @@
 
 .ai-carousel__text span {
   display: block;
+  font-weight: 700;
+  color: var(--text-color-emphasis);
+  font-family: var(--font-heading);
 }
 
 /* ===========================
