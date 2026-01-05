@@ -15,6 +15,21 @@
     }
 }
 
+.hero-about {
+    display: grid;
+    background-color: inherit;
+    padding: 2rem 0.5rem 1.2rem 0.5rem;
+    /* background: var(--bg-module-gradient-aqua-moderate); */
+    border-radius: 0.8rem;
+    /* top, right, bottom, left */
+}
+
+@media (min-width: 768px) {
+    .hero-homepage {
+        padding-left: 2rem;
+    }
+}
+
 .module--box-shadow-bg-grey {
     display: grid;
     background-color: var(--bg-module-grey);

@@ -103,6 +103,13 @@
   background-color: #ffffff;
 }
 
+.about-principles ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
 
 /* Cards */
 .card {
@@ -239,7 +246,7 @@
 /* ===========================
    SWIPER 
    =========================== */
-   /* LOGO MARQUEE */
+/* LOGO MARQUEE */
 
 .logo-marquee {
   width: 100%;
@@ -250,7 +257,7 @@
 .logo-marquee .swiper-wrapper {
   width: 50% !important;
   align-items: baseline;
-  transition-timing-function: linear !important; 
+  transition-timing-function: linear !important;
   /* constant motion */
 }
 

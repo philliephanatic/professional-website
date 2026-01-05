@@ -1,0 +1,16 @@
+#paragraph span {
+    padding-bottom: 1.5rem;
+    display: block;
+
+}
+
+#paragraph-bottom {
+    padding-bottom: 0 !important;
+}
+
+.about-principles .solution-icon::before {
+  content: "→";
+  padding-right: 0.5em;
+
+
+}
