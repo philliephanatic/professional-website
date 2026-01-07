@@ -64,7 +64,7 @@
     --bg-module-gradient-aqua-moderate: linear-gradient(135deg, #e0faff 0%, #b6edf9 50%, #49d3f2 100%);
     --bg-module-gradient-green-moderate: linear-gradient(135deg, #def7e7 0%, #c0eacb 50%, #93d9a5 100%);
     --bg-module-gradient-purple-moderate: linear-gradient(135deg, #e3e9ff 0%, #b7c7ff 50%, #88abf2 100%);
-    --bg-module-gradient-red-moderate: linear-gradient( 135deg,#fdeeee 0%,#f6caca 50%,#ee8f8f 100%);
+    --bg-module-gradient-red-moderate: linear-gradient(135deg, #fdeeee 0%, #f6caca 50%, #ee8f8f 100%);
     --bg-footer: #000000;
 
     /* CTA colors background */
@@ -113,7 +113,7 @@
     :root {
         /* Spacing */
         --page-margin: 0rem;
-        
+
         --page-padding: 1rem;
         --card-padding: 0.75rem;
         --carousel-card-padidng: 1.6rem;
@@ -218,7 +218,7 @@
         --card-padding: 1rem;
         --carousel-card-padidng: 3rem;
         --header-padding: 0 2rem 0 2rem;
-        
+
         --header-margin: 0rem 50rem 0rem 50rem;
         --footer-margin: 0rem 50rem 0rem 50rem;
 
@@ -254,12 +254,19 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--page-color-primary);
     color: var(--text-color-primary);
     font-family: var(--font-body);
     font-size: var(--fs-body);
     line-height: var(--lh-body);
     overflow-x: hidden;
+}
+
+main.default-landing-page {
+    flex: 1;
+    /* pushes footer down when content is short */
 }
 
 /* Links & media */
