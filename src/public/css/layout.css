@@ -81,13 +81,17 @@
     align-items: flex-start;
 }
 
+.u-flex-align-content-start {
+    display: flex;
+    align-content: flex-start;
+}
+
 .u-text-center {
     text-align: center;
 }
 
-.u-align-content-start {
-    display: flex;
-    align-content: flex-start;
+.u-align-content-center {
+  align-content: center;
 }
 
 .u-span-2 {
@@ -100,6 +104,10 @@
 
 .u-span-6 {
     grid-column: span 6;
+}
+
+.u-rows-2 {
+  grid-template-rows: 2;
 }
 
 

@@ -79,10 +79,13 @@
 
     /* Spacing */
     --container-gap: 1.5rem;
+
     --page-margin: 0rem;
+
     --page-padding: 1rem;
     --card-padding: 1.5rem;
     --module-padding: 3rem;
+
 
     /* Font sizes (mobile baseline) */
     --fs-h1: 2.8rem;
@@ -187,9 +190,11 @@
         /* Spacing */
         --page-padding: 2rem 6rem;
         --card-padding: 1rem;
-        --carousel-card-padidng: 2.4rem;
-
+        --carousel-card-padding: 2.4rem;
         --header-padding: 1rem 8rem;
+
+        --header-margin: 0rem 50rem 0rem 50rem;
+        --footer-margin: 0rem 6rem 0rem 6rem;
 
         /* Font sizes */
         --fs-h1: 6.2rem;
@@ -212,8 +217,11 @@
         --page-padding: 4rem 50rem;
         --card-padding: 1rem;
         --carousel-card-padidng: 3rem;
+        --header-padding: 0 2rem 0 2rem;
+        
+        --header-margin: 0rem 50rem 0rem 50rem;
+        --footer-margin: 0rem 50rem 0rem 50rem;
 
-        --header-padding: 2rem 52rem;
 
         /* Font sizes */
         --fs-h1: 6.2rem;
@@ -224,8 +232,6 @@
         --fs-card-heading: 3.2rem;
         --fs-eyebrow: 2.0rem;
 
-        /* --header-padding: 2rem 52rem;
-    --footer-padding: 4rem 50rem; */
     }
 }
 

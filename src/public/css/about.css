@@ -8,9 +8,3 @@
     padding-bottom: 0 !important;
 }
 
-.about-principles .solution-icon::before {
-  content: "→";
-  padding-right: 0.5em;
-
-
-}

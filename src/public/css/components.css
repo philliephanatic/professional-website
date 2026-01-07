@@ -25,6 +25,22 @@
   text-align: left;
 }
 
+.hero__img {
+  width: 100%;
+  max-width: 520px;     /* tune for your design */
+  justify-self: end;    /* keep image anchored in column 2 */
+}
+
+.hero__img img {
+  width: 100%;
+  height: auto;
+  display: block;       /* removes inline gap */
+}
+
+/* .hero__img {
+  display: flex;
+} */
+
 .module__title {
   display: flex;
   flex-direction: column;
@@ -368,7 +384,7 @@
   background: #ffffff;
   border-radius: 1.2rem;
   /* box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16); */
-  padding: var(--carousel-card-padidng);
+  padding: var(--carousel-card-padding);
 }
 
 .ai-carousel__text {
