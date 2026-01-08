@@ -6,7 +6,11 @@ import { fileURLToPath } from 'url';
 import router from './routes/index.js';
 
 const app = express();
+// const PORT = process.env.PORT || 3000;
+
 const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+
 
 // ESM-friendly __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -25,3 +29,6 @@ app.use('/', router);
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+console.log(__dirname);
+
