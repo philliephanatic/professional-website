@@ -86,6 +86,11 @@
   gap: 1.2rem;
   flex-wrap: wrap;
   margin-top: 0.8rem;
+
+}
+
+.hero__cta a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -115,8 +120,14 @@
   color: var(--color-primary-cta-text);
 }
 
+.hero__button--primary
+
 .hero__button--secondary {
   background-color: #ffffff;
+}
+
+.hero__button--linkedin-blue {
+  background-color: #0761c1;
 }
 
 .about-principles ul {

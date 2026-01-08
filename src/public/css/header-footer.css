@@ -14,6 +14,12 @@
     z-index: 1000;
 }
 
+.logo-image {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+}
+
 @media (min-width: 768px) {
     .site-header {
         padding: var(--header-padding)
@@ -175,9 +181,7 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .site-footer {
-        /* margin: var(--footer-margin); */
-    }
+    
 
     .social-media-footer img {
         height: 5rem;
@@ -194,16 +198,11 @@
         font-size: 1.25rem;
     }
 
-    /* .site-footer {
-
-    } */
+    
 }
 
 /* XL SCREEN */
 @media (min-width: 1441px) {
-
-    /* .site-footer {
-    } */
 
      .social-media-footer img {
         height: 8rem;

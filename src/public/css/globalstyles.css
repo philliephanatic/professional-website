@@ -116,7 +116,7 @@
 
         --page-padding: 1rem;
         --card-padding: 0.75rem;
-        --carousel-card-padidng: 1.6rem;
+        --carousel-card-padding: 1.6rem;
         --hero-padding: 2rem 0.5rem 1.2rem 0.5rem;
         --module-padding: 0.5rem;
         --header-padding: 1rem 2rem;
@@ -140,7 +140,7 @@
         /* Spacing */
         --page-padding: 1rem 2rem;
         --card-padding: 1rem;
-        --carousel-card-padidng: 2rem;
+        --carousel-card-padding: 2rem;
 
         --module-padding: 2rem;
         --header-padding: 1rem 4rem;
@@ -166,7 +166,7 @@
         /* Spacing */
         --page-padding: 4rem 4rem;
         --card-padding: 1rem;
-        --carousel-card-padidng: 2.2rem;
+        --carousel-card-padding: 2.2rem;
         --header-padding: 1rem 6rem;
 
         /* Font sizes */
@@ -216,7 +216,7 @@
         /* Spacing */
         --page-padding: 4rem 50rem;
         --card-padding: 1rem;
-        --carousel-card-padidng: 3rem;
+        --carousel-card-padding: 3rem;
         --header-padding: 0 2rem 0 2rem;
 
         --header-margin: 0rem 50rem 0rem 50rem;
