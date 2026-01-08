@@ -14,11 +14,7 @@
     z-index: 1000;
 }
 
-.logo-image {
-    display: flex;
-    height: 3rem;
-    width: 3rem;
-}
+
 
 @media (min-width: 768px) {
     .site-header {
@@ -47,9 +43,17 @@
 }
 
 .logo-image {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
     color: var(--text-color-primary);
     text-decoration: none;
 }
+
+/* .logo-image {
+    color: var(--text-color-primary);
+    text-decoration: none;
+} */
 
 .nav-ul-links {
     list-style: none;
@@ -181,7 +185,7 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
-    
+
 
     .social-media-footer img {
         height: 5rem;
@@ -198,13 +202,13 @@
         font-size: 1.25rem;
     }
 
-    
+
 }
 
 /* XL SCREEN */
 @media (min-width: 1441px) {
 
-     .social-media-footer img {
+    .social-media-footer img {
         height: 8rem;
     }
 
