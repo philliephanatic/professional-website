@@ -13,7 +13,7 @@ The site is intentionally built with a **lean and modern server-side architectur
 **Runtime:** Node.js (ESM modules enabled)  
 **Framework:** Express 5  
 **Templating Engine:** EJS (server-side rendered)  
-**Styling:** Semantic HTML + modular CSS with global design tokens  
+**Styling:** Semantic HTML + CSS with global design tokens + modular elements
 **Architecture:**  
 - Layout-driven EJS templates  
 - Reusable header/footer partials  
