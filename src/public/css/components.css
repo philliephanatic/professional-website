@@ -37,10 +37,6 @@
   display: block;       /* removes inline gap */
 }
 
-/* .hero__img {
-  display: flex;
-} */
-
 .module__title {
   display: flex;
   flex-direction: column;
@@ -120,14 +116,15 @@
   color: var(--color-primary-cta-text);
 }
 
-.hero__button--primary
-
 .hero__button--secondary {
   background-color: #ffffff;
+  font-weight: 700;
 }
 
 .hero__button--linkedin-blue {
-  background-color: #0761c1;
+  background-color: var(--bg-linkedin-blue);
+  color: var(--color-primary-cta-text);
+  font-weight: 700;
 }
 
 .about-principles ul {
@@ -504,4 +501,8 @@
 
 .font-weight-700 {
   font-weight: 700 !important;
+}
+
+.text-color--white {
+  color: white'
 }

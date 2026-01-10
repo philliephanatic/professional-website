@@ -66,6 +66,7 @@
     --bg-module-gradient-purple-moderate: linear-gradient(135deg, #e3e9ff 0%, #b7c7ff 50%, #88abf2 100%);
     --bg-module-gradient-red-moderate: linear-gradient(135deg, #fdeeee 0%, #f6caca 50%, #ee8f8f 100%);
     --bg-footer: #000000;
+    --bg-linkedin-blue: #0761c1;
 
     /* CTA colors background */
     --bg-primary-cta: #000000;

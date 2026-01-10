@@ -1,7 +1,16 @@
+#paragraph p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    #paragraph p {
+        margin: 0;
+    }
+}
+
 #paragraph span {
     padding-bottom: 1.5rem;
     display: block;
-
 }
 
 #paragraph-bottom {
@@ -14,4 +23,8 @@
 
 #about-hero-cta .hero__button--linkedin-blue {
     color: white;
+}
+
+#about-hero-cta {
+    padding-left: var(--module-padding);
 }
