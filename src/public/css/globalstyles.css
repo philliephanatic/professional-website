@@ -103,6 +103,9 @@
 
     /* SwiperJS pagination spacing */
     --swiper-pagination-bottom: 0px;
+
+    /* Img sizes */
+    --img-logo-header-height: 3rem;
 }
 
 /* ===========================
@@ -132,6 +135,8 @@
         --fs-card-heading: 1.6rem;
         --fs-eyebrow: 0.9rem;
 
+        /* Img sizes */
+        --img-logo-header-height: 3rem;
     }
 }
 
@@ -154,6 +159,9 @@
         --fs-cta: 2.2rem;
         --fs-card-heading: 1.8rem;
         --fs-eyebrow: 1rem;
+
+        /* Img sizes */
+        --img-logo-header-height: 5rem;
 
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 5px;
@@ -182,6 +190,9 @@
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 1px;
 
+        /* Img sizes */
+        --img-logo-header-height: 6rem;
+
     }
 }
 
@@ -206,6 +217,9 @@
         --fs-card-heading: 3.2rem;
         --fs-eyebrow: 1.3rem;
 
+        /* Img sizes */
+        --img-logo-header-height: 7rem;
+
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 3px;
     }
@@ -218,11 +232,10 @@
         --page-padding: 4rem 50rem;
         --card-padding: 1rem;
         --carousel-card-padding: 3rem;
-        --header-padding: 0 2rem 0 2rem;
+        --header-padding: 1rem 2rem 1rem 2rem;
 
         --header-margin: 0rem 50rem 0rem 50rem;
         --footer-margin: 0rem 50rem 0rem 50rem;
-
 
         /* Font sizes */
         --fs-h1: 6.2rem;
@@ -232,6 +245,10 @@
         --fs-cta: 3.0rem;
         --fs-card-heading: 3.2rem;
         --fs-eyebrow: 2.0rem;
+        
+        /* Img sizes */
+        --img-logo-header-height: 8.5rem;
+
 
     }
 }
