@@ -36,3 +36,7 @@
 #faq .faq__list {
     padding-bottom: 2rem;
 }
+
+#technical-skills .card__subheading {
+    text-transform: capitalize;
+}

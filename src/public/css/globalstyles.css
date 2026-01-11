@@ -112,6 +112,15 @@
    RESPONSIVE VARIABLE OVERRIDES
    =========================== */
 
+   /* XS MOBILE: 320px - 360px */
+   @media (min-width: 320px) and (max-width: 374px) {
+       :root {
+        --carousel-card-padding: 1.6rem;
+            --module-padding: 1rem;
+
+       }
+
+   }
 /* MOBILE: 375px - 767px */
 @media (min-width: 375px) and (max-width: 767px) {
     :root {

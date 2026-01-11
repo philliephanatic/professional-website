@@ -139,6 +139,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   text-align: left;
   justify-content: start;
   padding: var(--card-padding);
@@ -159,7 +160,6 @@
   margin-bottom: 0.5rem;
   padding: 0rem;
   text-align: center;
-  text-wrap: nowrap;
 }
 
 .card__subheading {
@@ -167,7 +167,16 @@
   font-weight: 500;
   padding: 0rem;
   text-align: center;
-  text-wrap: nowrap;
+}
+
+.card__heading,
+.card__subheading {
+  text-wrap: balance;
+  /* nicer line breaks when supported */
+  white-space: normal;
+  /* allow wrapping */
+  overflow-wrap: anywhere;
+  /* prevent overflow on tiny screens */
 }
 
 .card__body {
