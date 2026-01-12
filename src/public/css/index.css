@@ -40,3 +40,8 @@
 #technical-skills .card__subheading {
     text-transform: capitalize;
 }
+
+.card__subheading {
+      letter-spacing: -0.1rem;
+
+}

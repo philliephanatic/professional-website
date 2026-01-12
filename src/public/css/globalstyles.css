@@ -95,7 +95,7 @@
     --fs-body: 1.6rem;
     --fs-cta: 2.2rem;
     --fs-card-heading: 1.8rem;
-    --fs-card-subheading: 1.4rem;
+    --fs-card-subheading: 2rem;
 
     /* Line heights - scaling multipliers */
     --lh-tight: 1.15;
@@ -112,15 +112,18 @@
    RESPONSIVE VARIABLE OVERRIDES
    =========================== */
 
-   /* XS MOBILE: 320px - 360px */
-   @media (min-width: 320px) and (max-width: 374px) {
-       :root {
+/* XS MOBILE: 320px - 360px */
+@media (min-width: 320px) and (max-width: 374px) {
+    :root {
         --carousel-card-padding: 1.6rem;
-            --module-padding: 1rem;
+        --module-padding: 1rem;
+        --fs-card-heading: 1.6rem;
+        --fs-card-subheading: 1.4rem;
 
-       }
+    }
 
-   }
+}
+
 /* MOBILE: 375px - 767px */
 @media (min-width: 375px) and (max-width: 767px) {
     :root {
@@ -142,6 +145,8 @@
         --fs-body: 1.4rem;
         --fs-cta: 2.0rem;
         --fs-card-heading: 1.6rem;
+        --fs-card-subheading: 1.5rem;
+
         --fs-eyebrow: 0.9rem;
 
         /* Img sizes */
@@ -166,7 +171,9 @@
         --fs-h3: 2.0rem;
         --fs-body: 1.5rem;
         --fs-cta: 2.2rem;
-        --fs-card-heading: 1.8rem;
+        --fs-card-heading: 2rem;
+        --fs-card-subheading: 1.6rem;
+
         --fs-eyebrow: 1rem;
 
         /* Img sizes */
@@ -191,9 +198,11 @@
         --fs-h1: 5.0rem;
         --fs-h2: 3.8rem;
         --fs-h3: 2.8rem;
-        --fs-body: 1.6rem;
+        --fs-body: 1.7rem;
         --fs-cta: 2.4rem;
         --fs-card-heading: 2.6rem;
+        --fs-card-subheading: 1.8rem;
+
         --fs-eyebrow: 1.1rem;
 
         /* SwiperJS pagination spacing */
@@ -224,6 +233,7 @@
         --fs-body: 1.8rem;
         --fs-cta: 3.0rem;
         --fs-card-heading: 3.2rem;
+        --fs-card-subheading: 2rem;
         --fs-eyebrow: 1.3rem;
 
         /* Img sizes */
@@ -250,11 +260,12 @@
         --fs-h1: 6.2rem;
         --fs-h2: 5.0rem;
         --fs-h3: 4.0rem;
-        --fs-body: 1.8rem;
+        --fs-body: 2.1rem;
         --fs-cta: 3.0rem;
-        --fs-card-heading: 3.2rem;
+        --fs-card-heading: 4rem;
+        --fs-card-subheading: 2.5rem;
         --fs-eyebrow: 2.0rem;
-        
+
         /* Img sizes */
         --img-logo-header-height: 8.5rem;
 

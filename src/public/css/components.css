@@ -13,7 +13,7 @@
   letter-spacing: -0.4rem;
 }
 
-.text-color--red {
+.text-color--emphasis {
   color: var(--text-color-emphasis);
 }
 
@@ -167,6 +167,8 @@
   font-weight: 500;
   padding: 0rem;
   text-align: center;
+  letter-spacing: -0.1rem;
+
 }
 
 .card__heading,
