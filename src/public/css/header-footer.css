@@ -14,7 +14,7 @@
     z-index: 1000;
 }
 
-/* !CHANGE TO VARIABLES */
+/* !__CHANGE TO VARIABLES__ */
 
 @media (min-width: 768px) {
     .site-header {

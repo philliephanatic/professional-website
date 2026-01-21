@@ -77,12 +77,9 @@
     --bg-card-off-white: rgba(255, 255, 255, 0.05);
     --border-card-white: #ffffff;
 
-
     /* Spacing */
     --container-gap: 1.5rem;
-
     --page-margin: 0rem;
-
     --page-padding: 1rem;
     --card-padding: 1.5rem;
     --module-padding: 3rem;
@@ -106,6 +103,9 @@
 
     /* Img sizes */
     --img-logo-header-height: 3rem;
+
+    /* Sticky header anchor link placement */
+    --sticky-header-offset: 5rem;
 }
 
 /* ===========================
@@ -241,6 +241,9 @@
 
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 3px;
+
+         /* Sticky header anchor link placement */
+        --sticky-header-offset: 5.5rem;
     }
 }
 
@@ -269,7 +272,8 @@
         /* Img sizes */
         --img-logo-header-height: 8.5rem;
 
-
+         /* Sticky header anchor link placement */
+        --sticky-header-offset: 6.5rem;
     }
 }
 

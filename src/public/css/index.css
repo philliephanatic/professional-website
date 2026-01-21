@@ -37,6 +37,10 @@
     padding-bottom: 2rem;
 }
 
+#technical-skills {
+    scroll-margin-top: var(--sticky-header-offset);
+}
+
 #technical-skills .card__subheading {
     text-transform: capitalize;
 }
