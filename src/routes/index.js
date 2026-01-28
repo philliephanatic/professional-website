@@ -4,17 +4,17 @@ import { Router } from 'express';
 const router = Router();
 
 const baseMeta = {
-  siteName: 'Nolan Young | Web Marketing & CRO',
-  baseUrl: 'https://example.com' // update before launch
+  siteName: 'Nolan Young | Web Marketing & Operations • CRO • Performance',
+  baseUrl: 'https://young-marketing.io/' 
 };
 
 router.get('/', (req, res) => {
   res.render('pages/index', {
     meta: {
       ...baseMeta,
-      title: 'Web Marketing Leader Driving Revenue Through CRO & SEO',
+      title: 'Homepage',
       description:
-        'Portfolio of Nolan Young, a web marketing and site optimization manager focused on revenue, CRO, and SEO for high-traffic brands.',
+        'Portfolio website for Nolan Young outlining proficiencies in web marketing, operations, CRO, performance, and more.',
       canonicalPath: '/'
     }
   });
@@ -24,9 +24,9 @@ router.get('/about', (req, res) => {
   res.render('pages/about', {
     meta: {
       ...baseMeta,
-      title: 'About Nolan Young | Web Marketing & Site Optimization',
+      title: 'About Me',
       description:
-        'Learn about Nolan Young’s background managing and optimizing high-traffic websites across Fortune 500 and growth-stage companies.',
+        'Learn about my background managing and optimizing high-traffic websites.',
       canonicalPath: '/about'
     }
   });
@@ -36,9 +36,9 @@ router.get('/contact', (req, res) => {
   res.render('pages/contact', {
     meta: {
       ...baseMeta,
-      title: 'Contact Nolan Young | Web Marketing & CRO Partner',
+      title: 'Contact',
       description:
-        'Get in touch with Nolan Young for web marketing, SEO, and conversion optimization opportunities.',
+        'Get in touch.',
       canonicalPath: '/contact'
     }
   });
