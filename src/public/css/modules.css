@@ -5,7 +5,7 @@
     background-color: inherit;
     padding: 2rem 0.5rem 1.2rem 0.5rem;
     /* background: var(--bg-module-gradient-aqua-moderate); */
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
     /* top, right, bottom, left */
 }
 
@@ -20,7 +20,7 @@
     background-color: inherit;
     padding: 2rem 0.5rem 1.2rem 0.5rem;
     /* background: var(--bg-module-gradient-aqua-moderate); */
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
     /* top, right, bottom, left */
 }
 
@@ -34,7 +34,7 @@
     display: grid;
     background-color: var(--bg-module-grey);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -42,59 +42,58 @@
     display: grid;
     background-color: var(--bg-module-light-blue);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
 }
 
 .module--bg-black {
     display: grid;
     background-color: var(--bg-module-black);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
 }
 
 .module--bg-white {
     display: grid;
     background-color: var(--bg-module-white);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
 }
 
 .module--box-shadow-bg-white {
     display: grid;
     background-color: var(--bg-module-white);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .module--gradient-bg-aqua-moderate {
     display: grid;
     background: var(--bg-module-gradient-aqua-moderate);
-    padding:var(--module-padding);
-    border-radius: 0.8rem;
+    padding: var(--module-padding);
+    border-radius: var(--radius-md);
 }
 
 .module--gradient-bg-green-moderate {
     display: grid;
     background: var(--bg-module-gradient-green-moderate);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
 }
 
 .module--box-shadow-gradient-bg-green-moderate {
     display: grid;
     background: var(--bg-module-gradient-green-moderate);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-
 }
 
 .module--gradient-bg-purple-moderate {
     display: grid;
     background: var(--bg-module-gradient-purple-moderate);
     padding: var(--module-padding);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-md);
 }
 
 .card ol {
