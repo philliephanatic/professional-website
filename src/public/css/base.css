@@ -1,0 +1,149 @@
+/* ===========================
+   FONTS
+   =========================== */
+
+@font-face {
+    font-family: "Fjalla One";
+    src: url("/fonts/fjalla-one/FjallaOne-Regular.woff2") format("woff2"),
+        url("/fonts/fjalla-one/FjallaOne-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/OpenSans-Regular.woff2") format("woff2"),
+        url("/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2"),
+        url("/fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+        url("/fonts/roboto/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===========================
+   RESET / BASE
+   =========================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-color-primary);
+    color: var(--text-color-primary);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    overflow-x: hidden;
+}
+
+main.default-landing-page {
+    flex: 1;
+    /* pushes footer down when content is short */
+}
+
+/* Links & media */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ===========================
+   TYPOGRAPHY
+   =========================== */
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: var(--font-heading);
+    color: var(--text-color-primary);
+    line-height: var(--lh-tight);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4,
+h5,
+h6,
+p,
+li,
+a {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+}
+
+/* Vertical rhythm */
+
+h1+h2 {
+    margin-top: 0.25rem;
+}
+
+h1+p,
+h2+p,
+h3+p {
+    margin-top: 0.5rem;
+}
+
+p+p {
+    margin-top: 0.75rem;
+}

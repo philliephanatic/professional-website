@@ -83,7 +83,6 @@
   flex-wrap: wrap;
   margin-top: 0.8rem;
   text-transform: uppercase;
-
 }
 
 .hero__cta a {
@@ -107,9 +106,9 @@
   align-items: center;
   justify-content: center;
   padding: 0.8rem 1.4rem;
-  border-radius: 0.8rem;
+  border-radius: var(--radius-md);
   font-size: 1.4rem;
-  border: 1px solid rgba(0, 0, 0, 0.14);
+  border: var(--border-subtle);
 }
 
 .hero__button--primary {
@@ -118,7 +117,7 @@
 }
 
 .hero__button--secondary {
-  background-color: #ffffff;
+  background-color: var(--bg-module-white);
   font-weight: 700;
 }
 
@@ -146,11 +145,10 @@
   padding: var(--card-padding);
   alignment-baseline: text-top;
   background: var(--bg-card-off-white);
-  border-radius: 0.8rem;
+  border-radius: var(--radius-md);
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
   border: 1px solid var(--border-card-white);
   margin: 0.5rem;
-
 }
 
 .card__heading {
@@ -169,7 +167,6 @@
   padding: 0rem;
   text-align: center;
   letter-spacing: -0.1rem;
-
 }
 
 .card__heading,
@@ -206,7 +203,6 @@
   margin: 0;
   list-style: none;
   flex-wrap: nowrap;
-
 }
 
 .sticky-nav__link {
@@ -215,7 +211,6 @@
   text-transform: uppercase;
   font-size: var(--fs-body);
   white-space: nowrap;
-
   font-family: "Fjalla One";
 }
 
@@ -230,15 +225,15 @@
   gap: 1rem;
 }
 
+/* Intentional exception: 425px keeps sep hidden on mid-small screens
+   where the sticky nav gets crowded. Fits between xs and sm breakpoints. */
 @media (max-width: 425px) {
-
   .sticky-nav__sep {
     display: none;
   }
 }
 
-@media (max-width: 375px) {
-
+@media (max-width: 374px) {
   .sticky-nav__list {
     justify-content: space-around;
   }
@@ -249,16 +244,12 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-
-
   .sticky-nav__list {
     justify-content: space-around;
   }
 }
 
 @media (min-width: 1440px) and (max-width: 1999px) {
-
-
   .sticky-nav__list {
     justify-content: space-around;
   }
@@ -266,7 +257,6 @@
   .sticky-nav__sep {
     display: none;
   }
-
 }
 
 @media (min-width: 2000px) {
@@ -280,7 +270,7 @@
 }
 
 /* ===========================
-   SWIPER 
+   SWIPER
    =========================== */
 /* LOGO MARQUEE */
 
@@ -307,7 +297,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.2rem 2.4rem;
+  padding: var(--space-sm) var(--space-lg);
   flex-shrink: 0;
 }
 
@@ -402,7 +392,7 @@
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: #ffffff;
-  border-radius: 1.2rem;
+  border-radius: var(--radius-lg);
   /* box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16); */
   padding: var(--carousel-card-padding);
 }
@@ -437,17 +427,17 @@
 .faq__list {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: var(--space-md);
 }
 
 .faq__item {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
-  padding-top: 1.6rem;
+  padding-top: var(--space-md);
 }
 
 .faq__item:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  padding-bottom: 1.6rem;
+  padding-bottom: var(--space-md);
 }
 
 /* Remove default disclosure triangle */
@@ -516,5 +506,5 @@
 }
 
 .text-color--white {
-  color: white'
+  color: var(--bg-module-white);
 }

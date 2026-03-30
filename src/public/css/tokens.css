@@ -1,42 +1,15 @@
-/* ===========================
-   FONTS
-   =========================== */
+/*
+  BREAKPOINT SCALE
+  xs:  < 375px   (base styles, no query needed)
+  sm:  375px+
+  md:  768px+
+  lg:  1024px+
+  xl:  1440px+
+  2xl: 2000px+
 
-@font-face {
-    font-family: "Fjalla One";
-    src: url("/fonts/fjalla-one/FjallaOne-Regular.woff2") format("woff2"),
-        url("/fonts/fjalla-one/FjallaOne-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/open-sans/OpenSans-Regular.woff2") format("woff2"),
-        url("/fonts/open-sans/OpenSans-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/open-sans/OpenSans-SemiBold.woff2") format("woff2"),
-        url("/fonts/open-sans/OpenSans-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("/fonts/roboto/Roboto-Regular.woff2") format("woff2"),
-        url("/fonts/roboto/Roboto-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+  Use: (min-width: Npx) and (max-width: M-1px) for bounded ranges.
+  Exception: 2xl uses min-width only (open-ended).
+*/
 
 /* ===========================
    BASE VARIABLES (MOBILE-FIRST)
@@ -77,13 +50,32 @@
     --bg-card-off-white: rgba(255, 255, 255, 0.05);
     --border-card-white: #ffffff;
 
+    /* Semantic aliases (fixes previously-undefined variable bugs) */
+    --accent: var(--text-color-primary);
+    --color-page-bg: var(--page-color-primary);
+
     /* Spacing */
     --container-gap: 1.5rem;
     --page-margin: 0rem;
     --page-padding: 1rem;
     --card-padding: 1.5rem;
     --module-padding: 3rem;
+    --header-padding: 1rem 2rem;
 
+    /* Radius scale */
+    --radius-sm: 0.4rem;
+    --radius-md: 0.8rem;
+    --radius-lg: 1.6rem;
+
+    /* Border */
+    --border-subtle: 1px solid rgba(0, 0, 0, 0.14);
+
+    /* Spacing scale */
+    --space-xs: 0.4rem;
+    --space-sm: 0.8rem;
+    --space-md: 1.6rem;
+    --space-lg: 2.4rem;
+    --space-xl: 3.2rem;
 
     /* Font sizes (mobile baseline) */
     --fs-h1: 2.8rem;
@@ -112,16 +104,14 @@
    RESPONSIVE VARIABLE OVERRIDES
    =========================== */
 
-/* XS MOBILE: 320px - 360px */
+/* XS MOBILE: < 375px */
 @media (min-width: 320px) and (max-width: 374px) {
     :root {
         --carousel-card-padding: 1.6rem;
         --module-padding: 1rem;
         --fs-card-heading: 1.6rem;
         --fs-card-subheading: 1.4rem;
-
     }
-
 }
 
 /* MOBILE: 375px - 767px */
@@ -129,7 +119,6 @@
     :root {
         /* Spacing */
         --page-margin: 0rem;
-
         --page-padding: 1rem;
         --card-padding: 0.75rem;
         --carousel-card-padding: 1.6rem;
@@ -146,7 +135,6 @@
         --fs-cta: 2.0rem;
         --fs-card-heading: 1.6rem;
         --fs-card-subheading: 1.5rem;
-
         --fs-eyebrow: 0.9rem;
 
         /* Img sizes */
@@ -161,7 +149,6 @@
         --page-padding: 1rem 2rem;
         --card-padding: 1rem;
         --carousel-card-padding: 2rem;
-
         --module-padding: 2rem;
         --header-padding: 1rem 4rem;
 
@@ -173,7 +160,6 @@
         --fs-cta: 2.2rem;
         --fs-card-heading: 2rem;
         --fs-card-subheading: 1.6rem;
-
         --fs-eyebrow: 1rem;
 
         /* Img sizes */
@@ -181,7 +167,6 @@
 
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 5px;
-
     }
 }
 
@@ -202,7 +187,6 @@
         --fs-cta: 2.4rem;
         --fs-card-heading: 2.6rem;
         --fs-card-subheading: 1.8rem;
-
         --fs-eyebrow: 1.1rem;
 
         /* SwiperJS pagination spacing */
@@ -210,7 +194,6 @@
 
         /* Img sizes */
         --img-logo-header-height: 6rem;
-
     }
 }
 
@@ -222,7 +205,6 @@
         --card-padding: 1rem;
         --carousel-card-padding: 2.4rem;
         --header-padding: 1rem 8rem;
-
         --header-margin: 0rem 50rem 0rem 50rem;
         --footer-margin: 0rem 6rem 0rem 6rem;
 
@@ -242,7 +224,7 @@
         /* SwiperJS pagination spacing */
         --swiper-pagination-bottom: 3px;
 
-         /* Sticky header anchor link placement */
+        /* Sticky header anchor link placement */
         --sticky-header-offset: 5.5rem;
     }
 }
@@ -255,7 +237,6 @@
         --card-padding: 1rem;
         --carousel-card-padding: 3rem;
         --header-padding: 1rem 2rem 1rem 2rem;
-
         --header-margin: 0rem 50rem 0rem 50rem;
         --footer-margin: 0rem 50rem 0rem 50rem;
 
@@ -272,118 +253,7 @@
         /* Img sizes */
         --img-logo-header-height: 8.5rem;
 
-         /* Sticky header anchor link placement */
+        /* Sticky header anchor link placement */
         --sticky-header-offset: 6.5rem;
     }
-}
-
-/* ===========================
-   RESET / BASE
-   =========================== */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-    /* 1rem = 10px */
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--page-color-primary);
-    color: var(--text-color-primary);
-    font-family: var(--font-body);
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
-    overflow-x: hidden;
-}
-
-main.default-landing-page {
-    flex: 1;
-    /* pushes footer down when content is short */
-}
-
-/* Links & media */
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus-visible {
-    text-decoration: underline;
-}
-
-.visually-hidden {
-    position: absolute !important;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-
-/* ===========================
-   TYPOGRAPHY
-   =========================== */
-
-h1,
-h2,
-h3 {
-    margin: 0;
-    font-family: var(--font-heading);
-    color: var(--text-color-primary);
-    line-height: var(--lh-tight);
-}
-
-h1 {
-    font-size: var(--fs-h1);
-}
-
-h2 {
-    font-size: var(--fs-h2);
-}
-
-h3 {
-    font-size: var(--fs-h3);
-}
-
-h4,
-h5,
-h6,
-p,
-li,
-a {
-    font-family: var(--font-body);
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
-}
-
-/* Vertical rhythm */
-
-h1+h2 {
-    margin-top: 0.25rem;
-}
-
-h1+p,
-h2+p,
-h3+p {
-    margin-top: 0.5rem;
-}
-
-p+p {
-    margin-top: 0.75rem;
 }
