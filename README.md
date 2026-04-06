@@ -1,133 +1,118 @@
-# Nolan Young — Professional Website  
-_Server-rendered, performance-first personal site built with Node.js, Express, and EJS_
+# Nolan Young — Professional Website
 
-This repository contains the source code for my professional website, designed to demonstrate how I approach website architecture, performance, experimentation, and long-term maintainability.
-
-The site reflects how I think about **high-traffic, SEO-sensitive web surfaces**: prioritizing fast initial load, predictable behavior, accessibility, and clean operational workflows over unnecessary complexity.
-
-It is intentionally **server-rendered**, **modular**, and **deployment-stable**, mirroring the standards I apply to production web environments.
+**Live site → [young-marketing.io](https://young-marketing.io)**  
+*Server-rendered, performance-first personal site built with Node.js, Express 5, and EJS*
 
 ---
 
-## 🎯 Objectives
+## What This Is
 
-- Demonstrate a modern, server-rendered web architecture optimized for performance and SEO  
-- Showcase a modular, maintainable CSS and layout system  
-- Emphasize disciplined experimentation, technical site operations, and execution quality  
-- Deliver a polished, professional experience suitable for client-facing and executive review  
+A production-deployed personal website built to reflect how I think about **web operations at scale**: server-side rendering for crawlability and Core Web Vitals, a structured CSS design token system for long-term maintainability, and deliberate architectural trade-offs that favor reliability over novelty.
 
----
-
-## 🚀 Tech Stack
-
-**Runtime**  
-- Node.js (ESM modules enabled)
-
-**Web Framework**  
-- Express 5
-
-**Rendering**  
-- EJS (server-side rendered templates)
-
-**Styling**  
-- Semantic HTML  
-- Modular CSS architecture  
-- Global design tokens via CSS variables  
-- Mobile-first, responsive layout system
-
-**Client Enhancements**  
-- Minimal JavaScript for interaction only (no client-heavy rendering)  
-- Swiper.js for controlled, performance-conscious UI motion
+This is not a framework experiment. Every decision mirrors the standards I apply to high-traffic, SEO-sensitive marketing surfaces — where operational clarity, fast delivery, and predictable behavior matter more than abstraction.
 
 ---
 
-## 🧱 Architecture Overview
+## Tech Stack
 
-The site follows a **layout-driven, server-rendered architecture** designed for clarity, speed, and stability:
-
-- Pages rendered as complete HTML on the server  
-- Shared layout and reusable partials (head, header, footer)  
-- Route-level SEO metadata (title, description, canonical URLs)  
-- Clean, human-readable URLs:
-  - `/`
-  - `/about`
-  - `/contact`
-
-This approach ensures:
-- Fast first paint and predictable Core Web Vitals  
-- Full crawlability for search engines  
-- Deterministic builds and stable deployments  
-- Minimal runtime risk in production
+| Layer | Choice | Rationale |
+|---|---|---|
+| Runtime | Node.js (ESM modules) | Lightweight, production-stable |
+| Framework | Express 5 | Minimal surface area, full control |
+| Rendering | EJS (SSR) | Complete HTML on first byte — no hydration lag |
+| Styling | Modular CSS + design tokens | Scalable system without a framework dependency |
+| Client JS | Vanilla JS + Swiper.js | Mobile nav toggle, FAQ accordion, carousel behavior — no framework overhead |
+| Deployment | Render (CI/CD via GitHub) | Push-to-deploy from `main`, zero manual steps |
 
 ---
 
-## 📁 Project Structure
+## Architecture
 
+The site follows a **layout-driven, server-rendered pattern** — the same approach I'd apply to a B2B SaaS marketing site:
+
+- Complete HTML rendered on the server → fast first paint, reliable Core Web Vitals
+- Shared layout partials (`head.ejs`, `header.ejs`, `footer.ejs`) → single source of truth for global changes
+- Route-level SEO metadata (title, description, canonical URL, Open Graph) injected via a `baseMeta` object spread — clean, DRY, scalable
+- Canonical URLs assembled with trailing-slash normalization to prevent duplicate indexing
+- Liveness and readiness health check endpoints (`/health`, `/ready`) for production deployment signaling
+- Graceful SIGTERM/SIGINT shutdown handling — clean restarts without dropped connections
+```
 src/
-├── server.js # Express app entry point
+├── server.js                  # Express entry point, health checks, graceful shutdown
 ├── routes/
-│ └── index.js # Page routing + metadata
+│   └── index.js               # Page routing + per-route SEO metadata
 ├── views/
-│ ├── pages/ # Page-level EJS templates
-│ │ ├── index.ejs
-│ │ ├── about.ejs
-│ │ └── contact.ejs
-│ └── partials/ # Shared layout components
-│ ├── head.ejs
-│ ├── header.ejs
-│ └── footer.ejs
-├── public/
-│ ├── css/ # Modular CSS by responsibility
-│ │ ├── globalstyles.css
-│ │ ├── layout.css
-│ │ ├── components.css
-│ │ ├── modules.css
-│ │ └── page-specific files
-│ ├── js/ # Page-scoped JS only
-│ ├── img/ # Optimized SVG assets
-│ ├── fonts/ # Self-hosted web fonts
-│ └── favicon/ # Favicon assets
-
-
----
-
-## 🔍 Performance & SEO Considerations
-
-- Server-rendered HTML for immediate content availability  
-- No client-side rendering dependencies  
-- Minimal JavaScript footprint  
-- Accessible semantic markup and heading hierarchy  
-- Stable layout behavior across viewport sizes  
-- SEO-safe routing and canonical URLs  
+│   ├── pages/                 # Page-level EJS templates
+│   │   ├── index.ejs
+│   │   ├── about.ejs
+│   │   └── contact.ejs
+│   └── partials/              # Shared layout components
+│       ├── head.ejs
+│       ├── header.ejs
+│       └── footer.ejs
+└── public/
+    ├── css/                   # Modular CSS by responsibility
+    │   ├── tokens.css         # Design tokens: type scale, spacing, color, breakpoints
+    │   ├── base.css           # Reset and global defaults
+    │   ├── header-footer.css  # Navigation and footer layout
+    │   ├── layout.css         # Page-level structure and grid
+    │   ├── components.css     # Reusable UI components
+    │   ├── modules.css        # Section-level content modules
+    │   └── pages/             # Page-specific overrides
+    ├── js/                    # Page-scoped JS only
+    │   ├── global-header.js   # Mobile nav toggle
+    │   └── index.js           # Logo marquee, AI carousel, FAQ accordion
+    ├── img/                   # Optimized SVG and PNG assets
+    ├── fonts/                 # Self-hosted web fonts
+    └── favicon/               # Full favicon set including webmanifest
+```
 
 ---
 
-## ☁️ Deployment
+## CSS Design System
 
-The site is deployed on **Render** and configured for continuous deployment from GitHub.
+The stylesheet architecture is built around a `tokens.css` file that defines all design decisions as CSS custom properties — updated across 6 responsive breakpoints:
 
-Key considerations:
-- Production behavior validated against real-world hosting constraints  
-- Architecture intentionally minimizes runtime work to reduce startup impact  
+- **Typography** — fluid type scale from mobile baseline to 2xl monitor (`--fs-h1` through `--fs-body`)
+- **Color** — semantic aliases (`--text-color-primary`, `--bg-module-*`, `--bg-primary-cta`) decoupled from raw hex values
+- **Spacing** — consistent scale (`--space-xs` through `--space-xl`) plus layout-specific tokens
+- **Breakpoints** — xs (320px), sm (375px), md (768px), lg (1024px), xl (1440px), 2xl (2000px+)
 
----
-
-## 📌 Notes
-
-This project is not intended as a framework showcase or a tool comparison exercise.  
-Every architectural decision reflects **tradeoffs made deliberately**, favoring:
-
-- Reliability over novelty  
-- Clarity over abstraction  
-- Long-term maintainability over short-term velocity  
+This approach means a single token change propagates globally — the same principle I'd apply managing a CMS-driven marketing site.
 
 ---
 
-## 📬 Contact
+## SEO & Performance Approach
 
-For professional inquiries or collaboration, reach out via LinkedIn.  
-Links are available directly on the live site.
+- **Server-rendered HTML** — content immediately available to crawlers, no JS execution required
+- **Per-route metadata** — title, description, canonical, and Open Graph tags set individually per page
+- **Canonical URL normalization** — trailing slash stripped at assembly to prevent duplicate indexing
+- **Self-hosted fonts** — eliminates render-blocking from third-party font requests
+- **Semantic heading hierarchy** — correct H1→H2→H3 structure across all pages
+- **Full favicon set** — SVG, ICO, Apple Touch, webmanifest, Safari pinned tab
 
 ---
 
-© Nolan Young
+## AI Workflow
+
+This project was built and iterated with AI throughout — architecture decisions, CSS refactoring, debugging, and copy review. I treat AI tooling as a first-class collaborator and apply it wherever it improves speed and output quality without sacrificing judgment.
+
+---
+
+## Deployment
+
+Deployed on **Render** with continuous deployment from the `main` branch.
+
+- Push to `main` → automatic build and deploy
+- `/health` endpoint confirms process and HTTP server are responding
+- `/ready` endpoint confirms app is ready to serve traffic before Render routes requests to it
+
+---
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/nolanyoung/) · [young-marketing.io](https://young-marketing.io)
+
+---
+
+*Built by Nolan Young*
